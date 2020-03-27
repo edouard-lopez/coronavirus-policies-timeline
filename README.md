@@ -13,10 +13,17 @@ In the project directory, you can run:
 `published_date` | source's publication date |  2020-03-03T21:06:04
 `url` | source URL |  https://www.liberation.fr/france/2020/03/03/penurie-de-masques-les-autorites-n-ont-pas-vu-plus-loin-que-le-bout-de-leur-nez_1780489",
 `title` | source article title |  Pénurie de masques : les autorités n’ont pas vu plus loin que le bout de leur nez",
-`entity` | who is speaking | `government`, `company`, `individual`, etc.
+`entity` | who is speaking | a `government`, a `company`, an `individual`, etc.
 `tags` | about what? |  `["announcement", "announce_order", "mask"]`, etc.
 
 #### Entity's Values
+
+
+| Entity | Description |
+| --- | --- |
+`government` | Government statement | French goverment, local state or their representative
+`company` | Company representative | Dyson, Google, etc.
+`individual` | private individual 
 
 #### Tags' Values
 
