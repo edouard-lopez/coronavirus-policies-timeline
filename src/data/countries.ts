@@ -1,8 +1,9 @@
 export default [
   "China",
-  "Japan",
-  "South Korea",
   "France",
   "Italy",
+  "Japan",
+  "South Korea",
+  "Spain",
   "USA"
 ].sort();

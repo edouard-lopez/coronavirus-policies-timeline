@@ -2,11 +2,8 @@ import * as d3 from "d3";
 import { FIRST_CASE, END_OF_2020 } from "./boundaries";
 
 const drawGraph = (element, lanes, data) => {
-  console.log("element", element);
-  console.log("data", data);
-
   const timeBegin = 0;
-  const timeEnd = 2000;
+  const timeEnd = END_OF_2020 - FIRST_CASE;
   const graphWidth = element.current.offsetWidth;
   const isWide = graphWidth > 780;
   const marginMultiplier = isWide ? 3 : 1;
@@ -20,10 +17,8 @@ const drawGraph = (element, lanes, data) => {
   const graphHeight = 500;
   const height = graphHeight - margin.top - margin.bottom;
 
-  const miniHeight = height * 0.2;
   const mainHeight = height * 0.8;
-  console.log("miniHeight", miniHeight);
-  console.log("mainHeight", mainHeight);
+  const miniHeight = height * 0.2;
 
   const x = d3
     .scaleLinear()
