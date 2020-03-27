@@ -45,3 +45,8 @@ In the project directory, you can run:
 make serve-frontend -->
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### Credits
+
+* [Timeline using D3 V5](https://observablehq.com/@ltmylinh/timeline-using-d3-v5) ;
+* [Timeline of the 2019–20 coronavirus pandemic](https://www.wikiwand.com/en/Timeline_of_the_2019%E2%80%9320_coronavirus_pandemic) ;
