@@ -1,10 +1,10 @@
 import * as d3 from "d3";
+import { FIRST_CASE, END_OF_2020 } from "./boundaries";
 
-const drawGraph = (element, data) => {
+const drawGraph = (element, lanes, data) => {
   console.log("element", element);
   console.log("data", data);
 
-  const lanes = ["Chinese", "Japanese", "Korean"];
   const timeBegin = 0;
   const timeEnd = 2000;
   const graphWidth = element.current.offsetWidth;
