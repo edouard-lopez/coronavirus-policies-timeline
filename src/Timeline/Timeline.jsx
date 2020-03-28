@@ -5,17 +5,14 @@ import WHO from "../data/who.json";
 import pandemic from "../data/pandemic.json";
 import "./Timeline.css";
 
-const dataset = {
-  WHO,
-  pandemic
-}
+const dataset = [WHO, pandemic];
 
 function Timeline() {
   const [countries, setCountries] = useState(COUNTRIES);
   const [data, setData] = useState(dataset);
 
   const graph = useRef(null);
-  useEffect(() => drawGraph(graph, COUNTRIES, data));
+  useEffect(() => drawGraph(graph, countries, data));
 
   return (
     <div className="Timeline">
