@@ -17,7 +17,7 @@ function Timeline() {
 
   return (
     <div className="Timeline">
-      <h3>Timeline</h3>
+      <h2>Timeline</h2>
       <div ref={graph}></div>
     </div>
   );

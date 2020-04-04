@@ -5,13 +5,13 @@ const drawGraph = (element, lanes, data) => {
   const timeBegin = GRAPH_BEGIN;
   const timeEnd = GRAPH_WIDTH;
   const graphWidth = element.current.offsetWidth;
-  const isWide = graphWidth > 780;
-  const marginMultiplier = isWide ? 3 : 1;
+  console.log("graphWidth", graphWidth);
+
   const margin = {
-    top: 20 * marginMultiplier,
-    right: 15 * marginMultiplier,
-    bottom: 15 * marginMultiplier,
-    left: 60 * marginMultiplier,
+    top: 20,
+    right: 15,
+    bottom: 15,
+    left: 100,
   };
   const width = graphWidth - margin.left - margin.right;
   const graphHeight = 500;
@@ -147,7 +147,9 @@ const drawGraph = (element, lanes, data) => {
       timeSelection = selection.map(x.invert),
       minExtent = timeSelection[0],
       maxExtent = timeSelection[1],
-      visItems = data.filter((d) => d.start < maxExtent && d.end > minExtent);
+      visibleItems = data.filter(
+        (d) => d.start < maxExtent && d.end > minExtent
+      );
 
     x1.domain([minExtent, maxExtent]);
 
