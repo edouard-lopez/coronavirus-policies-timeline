@@ -10,32 +10,11 @@ In the project directory, you can run:
 
 | key | description | example
 | --- | --- | --- |
-`published_date` | source's publication date |  2020-03-03T21:06:04
+`published_date` | source's publication date |  `2020-03-03T21:06:04`
 `url` | source URL |  https://www.liberation.fr/france/2020/03/03/penurie-de-masques-les-autorites-n-ont-pas-vu-plus-loin-que-le-bout-de-leur-nez_1780489",
-`title` | source article title |  Pénurie de masques : les autorités n’ont pas vu plus loin que le bout de leur nez",
-`entity` | who is speaking | a `government`, a `company`, an `individual`, etc.
-`tags` | about what? |  `["announcement", "announce_order", "mask"]`, etc.
-
-#### Entity's Values
-
-
-| Entity | Description |
-| --- | --- |
-`government` | Government statement | French goverment, local state or their representative
-`company` | Company representative | Dyson, Google, etc.
-`individual` | private individual 
-
-#### Tags' Values
-
-| Tag | Description |
-| --- | --- |
-`announcement` | statement to the public 
-`announce_distribution` | distributing equipments to professional
-`announce_order` | order equipments
-`announce_support` | announcing support
-`announce_free` | announce free help
-`announce_treatment` | announce treatment 
-`mask` | masks-related
+`title` | source article title |  <cite>Pénurie de masques : les autorités n’ont pas vu plus loin que le bout de leur nez"</cite>
+[`entity`](src/types/entity.ts) | who is speaking | see [types/entity.ts](src/types/entity.ts) for possible values
+[`tags`](src/types/tag.ts) | about what? | see [types/tag.ts](src/types/tag.ts) for possible values
 
 
 ### Run
@@ -50,3 +29,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 * [Timeline using D3 V5](https://observablehq.com/@ltmylinh/timeline-using-d3-v5) ;
 * [Timeline of the 2019–20 coronavirus pandemic](https://www.wikiwand.com/en/Timeline_of_the_2019%E2%80%9320_coronavirus_pandemic) ;
+* [Collection of selected COVID-19 novel coronavirus(SARS-CoV-2) related articles, categorized by date](https://www.covid19-archive.com/)
+* [D3-Annotation with D3 Line Chart, Adding Annotations to Charts](https://observablehq.com/@hydrosquall/d3-annotation-with-d3-line-chart)
