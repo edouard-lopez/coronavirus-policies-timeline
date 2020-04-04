@@ -156,7 +156,7 @@ const drawGraph = (element, lanes, data) => {
     //update main item rects
     rects = itemRects
       .selectAll("rect")
-      .data(visItems, (d) => d.title)
+      .data(visibleItems, (d) => d.title)
       .attr("x", (d) => x1(d.start))
       .attr("width", (d) => x1(d.end) - x1(d.start));
 
@@ -174,7 +174,7 @@ const drawGraph = (element, lanes, data) => {
     //update the item labels
     labels = itemRects
       .selectAll("text")
-      .data(visItems, (d) => d.title)
+      .data(visibleItems, (d) => d.title)
       .attr("x", (d) => x1(Math.max(d.start, minExtent) + 2));
 
     labels
