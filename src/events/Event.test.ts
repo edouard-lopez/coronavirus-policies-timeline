@@ -1,6 +1,7 @@
 import { Event as EventType, Events } from "../types/event";
 import { TimelineEvents } from "../types/timelineEvent";
 import * as Event from "./Event";
+import { GRAPH_BEGIN } from "../Timeline/boundaries";
 
 const event1: EventType = {
   published_date: "2020-01-05T00:00:00+00:00",
@@ -8,7 +9,7 @@ const event1: EventType = {
     "https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/",
   title: "Pneumonia of unknown cause – China",
   tags: ["announcement", "announce_first_case"],
-  entity: "government"
+  entity: "government",
 };
 
 const event2: EventType = {
@@ -17,29 +18,26 @@ const event2: EventType = {
     "https://www.scmp.com/news/china/society/article/3074991/coronavirus-chinas-first-confirmed-covid-19-case-traced-back",
   title: "China's first confirmed Covid-19 case traced back to November 17",
   tags: ["virus"],
-  entity: "government"
+  entity: "government",
 };
 
 test("add `start` and `end` based on published date", () => {
-  const newEvent:EventType = Event.addStartAndEnd(event1);
-  expect(newEvent).toEqual({ ...event1, start: 1578182400, end: 1578268800 });
+  const newEvent: EventType = Event.addStartAndEnd(event1);
+  expect(newEvent).toEqual({ ...event1, start: 238, end: 243 });
 });
 
 test("addD3Metadata to all items", () => {
-  const dataset: Events = [
-    event1,
-    { ...event1, entity: "individual" }
-  ];
+  const dataset: Events = [event1, { ...event1, entity: "individual" }];
   const lane = 0;
 
-  const newEvents:Events = Event.addD3Metadata(dataset, lane);
+  const newEvents: Events = Event.addD3Metadata(dataset, lane);
 
   expect(newEvents.length).toBe(2);
   expect(newEvents[0]).toEqual({
     ...event1,
-    start: 1578182400,
-    end: 1578268800,
-    lane: 0
+    start: 238,
+    end: 243,
+    lane: 0,
   });
 });
 
@@ -50,12 +48,12 @@ test("add `lane`", () => {
 });
 
 test("buildD3Data", () => {
-  const dataset:Array<Events> = [[event1], [event2]];
-  const data:TimelineEvents = Event.buildD3Data(dataset);
+  const dataset: Array<Events> = [[event1], [event2]];
+  const data: TimelineEvents = Event.buildD3Data(dataset);
 
   expect(data.length).toBe(2);
   expect(data).toEqual([
-    { ...event1, start: 1578182400, end: 1578268800, lane: 0 },
-    { ...event2, start: 1584057617, end: 1584144017, lane: 1 }
+    { ...event1, start: 238, end: 243, lane: 0 },
+    { ...event2, start: 569, end: 574, lane: 1 },
   ]);
 });

@@ -6,10 +6,10 @@ import pandemic from "../data/pandemic.json";
 import "./Timeline.css";
 import { buildD3Data } from "../events/Event";
 
-const dataset = buildD3Data([WHO, pandemic]);
+const dataset = buildD3Data([pandemic, WHO]);
 
 function Timeline() {
-  const [countries, setCountries] = useState(COUNTRIES);
+  const [countries, setCountries] = useState(["pandemic", "WHO", ...COUNTRIES]);
   const [data, setData] = useState(dataset);
 
   const graph = useRef(null);

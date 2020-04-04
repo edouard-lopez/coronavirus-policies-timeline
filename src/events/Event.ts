@@ -1,6 +1,7 @@
 import { DateTime } from "luxon";
 import { Event, Events } from "../types/event";
 import { TimelineEvents, TimelineEvent } from "../types/timelineEvent";
+import { projectToGraph } from "../Timeline/boundaries";
 
 const buildD3Data = (allDataset: Array<Events>): TimelineEvents => {
   const data: TimelineEvents = [];
@@ -21,8 +22,10 @@ const addD3Metadata = (dataset: Events, index: number): TimelineEvents =>
 
 const addStartAndEnd = (event: Event) => {
   const published_date = DateTime.fromISO(event.published_date);
-  const start = published_date.toSeconds();
-  const end = published_date.plus({ days: 1 }).toSeconds();
+  const { start, end } = projectToGraph(
+    published_date,
+    published_date.plus({ days: 1 })
+  );
 
   return {
     ...event,
