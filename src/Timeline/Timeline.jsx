@@ -4,8 +4,9 @@ import COUNTRIES from "../data/countries.ts";
 import WHO from "../data/who.json";
 import pandemic from "../data/pandemic.json";
 import "./Timeline.css";
+import { buildD3Data } from "../events/Event";
 
-const dataset = [WHO, pandemic];
+const dataset = buildD3Data([WHO, pandemic]);
 
 function Timeline() {
   const [countries, setCountries] = useState(COUNTRIES);

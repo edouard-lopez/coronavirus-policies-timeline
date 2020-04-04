@@ -1,21 +1,23 @@
 import { DateTime } from "luxon";
 import { Event, Events } from "../types/event";
-import { TimelineEvent, TimelineEvents } from "../types/timelineEvent";
+import { TimelineEvents, TimelineEvent } from "../types/timelineEvent";
 
-const buildData = (dataset: Array<Events>): TimelineEvents => {
-  const data = [];
+const buildD3Data = (allDataset: Array<Events>): TimelineEvents => {
+  const data: TimelineEvents = [];
 
-  dataset.forEach((events: Array<TimelineEvent>, index: number) =>
-    data.push(addMetadata(events, index))
-  );
+  allDataset.forEach((dataset: Events, index: number) => {
+    const events = addD3Metadata(dataset, index);
+    events.forEach(event => data.push(event));
+  });
 
   return data;
 };
 
-const addLane = (event: Event, lane: number) => ({ ...event, lane });
+const addLane = (event: Event, lane: number): TimelineEvent =>
+  ({ ...event, lane } as TimelineEvent);
 
-const addMetadata = (events: Events, index: number) =>
-  events.map(event => addLane(addStartAndEnd(event), index));
+const addD3Metadata = (dataset: Events, index: number): TimelineEvents =>
+  dataset.map(event => addLane(addStartAndEnd(event), index));
 
 const addStartAndEnd = (event: Event) => {
   const published_date = DateTime.fromISO(event.published_date);
@@ -29,4 +31,4 @@ const addStartAndEnd = (event: Event) => {
   };
 };
 
-export { buildData, addLane, addMetadata, addStartAndEnd };
+export { buildD3Data, addLane, addD3Metadata, addStartAndEnd };

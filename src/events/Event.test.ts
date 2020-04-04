@@ -25,14 +25,14 @@ test("add `start` and `end` based on published date", () => {
   expect(newEvent).toEqual({ ...event1, start: 1578182400, end: 1578268800 });
 });
 
-test("addMetadata to all items", () => {
-  const events: Array<EventType> = [
+test("addD3Metadata to all items", () => {
+  const dataset: Events = [
     event1,
     { ...event1, entity: "individual" }
   ];
   const lane = 0;
 
-  const newEvents:Events = Event.addMetadata(events, lane);
+  const newEvents:Events = Event.addD3Metadata(dataset, lane);
 
   expect(newEvents.length).toBe(2);
   expect(newEvents[0]).toEqual({
@@ -49,9 +49,9 @@ test("add `lane`", () => {
   expect(newEvent).toEqual({ ...event1, lane: 0 });
 });
 
-test("foo bar", () => {
+test("buildD3Data", () => {
   const dataset:Array<Events> = [[event1], [event2]];
-  const data:TimelineEvents = Event.buildData(dataset);
+  const data:TimelineEvents = Event.buildD3Data(dataset);
 
   expect(data.length).toBe(2);
   expect(data).toEqual([
