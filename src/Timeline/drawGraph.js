@@ -7,57 +7,56 @@ const date = (d) => {
 };
 const title = (d) => `${date(d)}: ${d.title}`;
 
-const zoomArea = (svg, margin, width, mainHeight, data, y1, lanes) => {
-  const main = svg
+const drawZoomArea = (
+  { svg, margin, width, mainHeight },
+  data,
+  yStartPoint,
+  lanes
+) => {
+  const zoomArea = svg
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
     .attr("width", width)
     .attr("height", mainHeight)
-    .attr("class", "main");
+    .attr("class", "zoomArea");
 
-  //main lanes and texts
-  main
+  //zoomArea lanes and texts
+  zoomArea
     .append("g")
-    .selectAll(".lane-lines")
+    .selectAll(".event-lines")
     .data(data)
     .enter()
     .append("line")
     .attr("x1", margin.right)
-    .attr("y1", (d) => y1(d.lane))
+    .attr("y1", (d) => yStartPoint(d.lane))
     .attr("x2", width)
-    .attr("y2", (d) => y1(d.lane))
-    .attr("class", "lane-lines");
+    .attr("y2", (d) => yStartPoint(d.lane))
+    .attr("class", "event-line");
 
-  main
+  zoomArea
     .append("g")
-    .selectAll(".lane-text")
+    .selectAll(".country-names")
     .data(lanes)
     .enter()
     .append("text")
     .text((d) => d)
     .attr("x", -margin.right)
-    .attr("y", (d, i) => y1(i + 0.5))
+    .attr("y", (d, i) => yStartPoint(i + 0.5))
     .attr("dy", ".5ex")
     .attr("text-anchor", "end")
-    .attr("class", "lane-text");
+    .attr("class", "country-name");
 
-  const itemRects = main.append("g").attr("clip-path", "url(#clip)");
-
-  return itemRects;
+  return zoomArea.append("g").attr("clip-path", "url(#clip)");
 };
 
-const overviewArea = (
-  svg,
-  margin,
-  width,
-  mainHeight,
-  miniHeight,
+const drawOverviewArea = (
+  { svg, margin, width, mainHeight, miniHeight },
   data,
   x,
-  y2,
+  yEndPoint,
   lanes
 ) => {
-  const mini = svg
+  const overviewArea = svg
     .append("g")
     .attr(
       "transform",
@@ -65,49 +64,49 @@ const overviewArea = (
     )
     .attr("width", width)
     .attr("height", miniHeight)
-    .attr("class", "mini");
+    .attr("class", "overviewArea");
 
   //mini lanes and texts
-  mini
+  overviewArea
     .append("g")
-    .selectAll(".lane-lines")
+    .selectAll(".event-lines")
     .data(data)
     .enter()
     .append("line")
     .attr("x1", margin.right)
-    .attr("y1", (d) => y2(d.lane))
+    .attr("y1", (d) => yEndPoint(d.lane))
     .attr("x2", width)
-    .attr("y2", (d) => y2(d.lane))
-    .attr("class", "lane-lines");
+    .attr("y2", (d) => yEndPoint(d.lane))
+    .attr("class", "event-line");
 
-  mini
+  overviewArea
     .append("g")
-    .selectAll(".lane-text")
+    .selectAll(".country-names")
     .data(lanes)
     .enter()
     .append("text")
     .text((d) => d)
     .attr("x", -margin.right)
-    .attr("y", (d, i) => y2(i + 0.5))
+    .attr("y", (d, i) => yEndPoint(i + 0.5))
     .attr("dy", ".5ex")
     .attr("text-anchor", "end")
-    .attr("class", "lane-text");
+    .attr("class", "country-name");
 
-  //mini item rects
-  mini
+  //mini event rects
+  overviewArea
     .append("g")
-    .selectAll("overview-items")
+    .selectAll("overview-events")
     .data(data)
     .enter()
     .append("rect")
-    .attr("class", (d) => `overview-item${d.lane}`)
+    .attr("class", (d) => `overview-event event${d.lane}`)
     .attr("x", (d) => x(d.start))
-    .attr("y", (d) => y2(d.lane + 0.5) - 5)
+    .attr("y", (d) => yEndPoint(d.lane + 0.5) - 5)
     .attr("width", (d) => x(d.end - d.start))
     .attr("height", 10);
 
   //mini labels
-  mini
+  overviewArea
     .append("g")
     .selectAll(".miniLabels")
     .data(data)
@@ -115,17 +114,68 @@ const overviewArea = (
     .append("text")
     // .text(d => title(d))
     .attr("x", (d) => x(d.start))
-    .attr("y", (d) => y2(d.lane + 0.5))
+    .attr("y", (d) => yEndPoint(d.lane + 0.5))
     .attr("dy", ".5ex");
 
-  return mini;
+  return overviewArea;
+};
+
+const displayBrush = (data, { x, xStartPoint, yStartPoint }, zoomArea) => {
+  const selection = d3.event && d3.event.selection;
+  if (!selection) return;
+  let zoomedEvents,
+    labels,
+    timeSelection = selection.map(x.invert),
+    minExtent = timeSelection[0],
+    maxExtent = timeSelection[1],
+    visibleEvents = data.filter(
+      (d) => d.start < maxExtent && d.end > minExtent
+    );
+
+  xStartPoint.domain([minExtent, maxExtent]);
+
+  //update zoomArea event rects
+  zoomedEvents = zoomArea
+    .selectAll("rect")
+    .data(visibleEvents, (d) => title(d))
+    .attr("x", (d) => xStartPoint(d.start))
+    .attr("width", (d) => xStartPoint(d.end) - xStartPoint(d.start));
+
+  zoomedEvents
+    .enter()
+    .append("rect")
+    .attr("class", (d) => `zoomed-event event${d.lane}`)
+    .attr("x", (d) => xStartPoint(d.start))
+    .attr("y", (d) => yStartPoint(d.lane))
+    .attr("width", (d) => xStartPoint(d.end) - xStartPoint(d.start))
+    .attr("height", (d) => yStartPoint(1));
+
+  zoomedEvents.exit().remove();
+
+  //update the event labels
+  labels = zoomArea
+    .selectAll("text")
+    .data(visibleEvents, (d) => title(d))
+    .attr("x", (d) => xStartPoint(Math.max(d.start, minExtent) + 2));
+
+  labels
+    .enter()
+    .append("a")
+    .attr("href", (d) => d.url)
+    .attr("target", "_blank")
+    .attr("class", "event-link")
+    .append("text")
+    .text((d) => title(d))
+    .attr("x", (d) => xStartPoint(Math.max(d.start, minExtent)))
+    .attr("y", (d) => yStartPoint(d.lane + 0.5))
+    .attr("text-anchor", "start")
+    .attr("class", "event-label");
 };
 
 const drawGraph = (element, lanes, data) => {
   const timeBegin = GRAPH_BEGIN;
   const timeEnd = GRAPH_WIDTH;
   const graphWidth = element.current.offsetWidth;
-  console.log("graphWidth", graphWidth);
 
   const margin = {
     top: 20,
@@ -142,18 +192,35 @@ const drawGraph = (element, lanes, data) => {
 
   const x = d3.scaleLinear().domain([timeBegin, timeEnd]).range([0, width]);
 
-  const x1 = d3.scaleLinear().range([0, width]);
+  const xStartPoint = d3.scaleLinear().range([0, width]);
 
-  const y1 = d3.scaleLinear().domain([0, lanes.length]).range([0, mainHeight]);
+  const yStartPoint = d3
+    .scaleLinear()
+    .domain([0, lanes.length])
+    .range([0, mainHeight]);
 
-  const y2 = d3.scaleLinear().domain([0, lanes.length]).range([0, miniHeight]);
+  const yEndPoint = d3
+    .scaleLinear()
+    .domain([0, lanes.length])
+    .range([0, miniHeight]);
 
   const svg = d3
     .select(element.current)
     .append("svg")
     .attr("class", "chart")
-    .attr("width", graphWidth)
-    .attr("height", graphHeight);
+    .attr("viewBox", [0, 0, graphWidth, graphHeight])
+    .style("display", "block");
+
+  const chart = {
+    graphHeight,
+    graphWidth,
+    height,
+    mainHeight,
+    margin,
+    miniHeight,
+    svg,
+    width,
+  };
 
   svg
     .append("defs")
@@ -163,68 +230,10 @@ const drawGraph = (element, lanes, data) => {
     .attr("width", width)
     .attr("height", mainHeight);
 
-  const itemRects = zoomArea(svg, margin, width, mainHeight, data, y1, lanes);
-  const mini = overviewArea(
-    svg,
-    margin,
-    width,
-    mainHeight,
-    miniHeight,
-    data,
-    x,
-    y2,
-    lanes
-  );
-
-  const display = () => {
-    const selection = d3.event && d3.event.selection;
-    if (!selection) return;
-    let rects,
-      labels,
-      timeSelection = selection.map(x.invert),
-      minExtent = timeSelection[0],
-      maxExtent = timeSelection[1],
-      visibleItems = data.filter(
-        (d) => d.start < maxExtent && d.end > minExtent
-      );
-
-    x1.domain([minExtent, maxExtent]);
-
-    //update main item rects
-    rects = itemRects
-      .selectAll("rect")
-      .data(visibleItems, (d) => title(d))
-      .attr("x", (d) => x1(d.start))
-      .attr("width", (d) => x1(d.end) - x1(d.start));
-
-    rects
-      .enter()
-      .append("rect")
-      .attr("class", (d) => `overview-item${d.lane}`)
-      .attr("x", (d) => x1(d.start))
-      .attr("y", (d) => y1(d.lane) + 10)
-      .attr("width", (d) => x1(d.end) - x1(d.start))
-      .attr("height", (d) => 0.8 * y1(1));
-
-    rects.exit().remove();
-
-    //update the item labels
-    labels = itemRects
-      .selectAll("text")
-      .data(visibleItems, (d) => title(d))
-      .attr("x", (d) => x1(Math.max(d.start, minExtent) + 2));
-
-    labels
-      .enter()
-      .append("text")
-      .text((d) => title(d))
-      .attr("x", (d) => x1(Math.max(d.start, minExtent)))
-      .attr("y", (d) => y1(d.lane + 0.5))
-      .attr("text-anchor", "start");
-
-    labels.exit().remove();
-  };
-
+  const zoomArea = drawZoomArea(chart, data, yStartPoint, lanes);
+  const overviewArea = drawOverviewArea(chart, data, x, yEndPoint, lanes);
+  const brushed = () =>
+    displayBrush(data, { x, xStartPoint, yStartPoint }, zoomArea);
   //brush
   const brush = d3
     .brushX()
@@ -232,9 +241,9 @@ const drawGraph = (element, lanes, data) => {
       [0, 0],
       [width, miniHeight],
     ])
-    .on("brush", display);
+    .on("brush", brushed);
 
-  mini
+  overviewArea
     .append("g")
     .attr("class", "x brush")
     .call(brush)
@@ -242,7 +251,7 @@ const drawGraph = (element, lanes, data) => {
     .attr("y", 1)
     .attr("height", miniHeight - 1);
 
-  display();
+  brushed();
 };
 
 export default drawGraph;

@@ -1,38 +1,47 @@
 .chart {
-    shape-rendering: crispEdges;
+  shape-rendering: crispEdges;
 }
 
-.mini text {
-    font: 9px sans-serif;
+.overviewArea text {
+  font: 9px sans-serif;
 }
 
-.main text {
-    font: 12px sans-serif;
+.zoomArea text {
+  font: 12px sans-serif;
 }
 
-.overview-item0 {
-    fill: darksalmon;
-    stroke-width: 6;
+.overview-event {
+  stroke-width: 6;
+  /* fill-opacity: 0.7; */
+}
+.event0 {
+  fill: var(--pf-global--palette--blue-200);
 }
 
-.overview-item1 {
-    fill: darkolivegreen;
-    fill-opacity: .7;
-    stroke-width: 6;
+.event1 {
+  fill: var(--pf-global--palette--orange-200);
 }
 
-.overview-item2 {
-    fill: slategray;
-    fill-opacity: .7;
-    stroke-width: 6;
+.event2 {
+  fill: var(--pf-global--palette--purple-200);
 }
 
 .brush .extent {
-    stroke: gray;
-    fill: dodgerblue;
-    fill-opacity: .365;
+  stroke: gray;
+  fill: dodgerblue;
+  fill-opacity: 0.365;
 }
 
-.lane-lines {
-    stroke: #ccc
+.event-link:after {
+  content: "🗗";
+}
+.event-label {
+  fill: var(--pf-global--palette--black-700);
+}
+.event-line {
+  stroke: var(--pf-global--palette--black-200);
+}
+
+.country-name {
+  fill: var(--pf-global--palette--black-700);
 }
