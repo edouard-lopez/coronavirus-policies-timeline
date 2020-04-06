@@ -2,12 +2,16 @@
   shape-rendering: crispEdges;
 }
 
-.overviewArea text {
-  font: 9px sans-serif;
+/* .overviewArea text {
+  font-size: var(--pf-global--FontSize--xs);
 }
 
 .zoomArea text {
-  font: 12px sans-serif;
+  font-size: var(--pf-global--FontSize--md);
+} */
+
+:root {
+  --pf-c-chip__text--FontSize: var(--pf-global--FontSize--xs);
 }
 
 .overview-event {

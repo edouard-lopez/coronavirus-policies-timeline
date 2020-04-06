@@ -44,7 +44,7 @@ const drawZoomArea = (
     .attr("y", (d, i) => yStartPoint(i + 0.5))
     .attr("dy", ".5ex")
     .attr("text-anchor", "end")
-    .attr("class", "country-name");
+    .attr("class", "country-name pf-c-title");
 
   return zoomArea.append("g").attr("clip-path", "url(#clip)");
 };
@@ -90,7 +90,7 @@ const drawOverviewArea = (
     .attr("y", (d, i) => yEndPoint(i + 0.5))
     .attr("dy", ".5ex")
     .attr("text-anchor", "end")
-    .attr("class", "country-name");
+    .attr("class", "country-name pf-c-chip__text");
 
   //mini event rects
   overviewArea
