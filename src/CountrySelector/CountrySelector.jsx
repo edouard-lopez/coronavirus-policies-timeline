@@ -1,4 +1,4 @@
-import COUNTRIES from "../data/countries";
+import {countryNames} from "../data/data.ts";
 
 import React from "react";
 import { Select, SelectOption, SelectVariant } from "@patternfly/react-core";
@@ -6,7 +6,7 @@ import { Select, SelectOption, SelectVariant } from "@patternfly/react-core";
 class CountrySelector extends React.Component {
   constructor(props) {
     super(props);
-    this.options = COUNTRIES.map(country => ({
+    this.options = countryNames.map(country => ({
       value: country,
       disabled: false
     }));

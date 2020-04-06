@@ -1,37 +1,23 @@
-import COUNTRIES from "./countries";
+import WHO from "../data/who.json";
+import China from "../data/china.json";
+import Europe from "../data/europe.json";
+import France from "../data/france.json";
+import Italy from "../data/italy.json";
+import Japan from "../data/japan.json";
+import SouthKorea from "../data/south-korea.json";
+import Spain from "../data/spain.json";
+import USA from "../data/usa.json";
 
-const old_data = [
-  /**
-   * todo:
-   *  * extract
-   *  * `lane` based on COUNTRIES list index
-   *  * `id`: from entry`s `title`
-   *  * `start` and `end` based on `published_date` field
-   *
-   */
-  { lane: 0, id: "Qin", start: 3, end: 120 },
-  { lane: 0, id: "Jin", start: 265, end: 420 },
-  { lane: 0, id: "Sui", start: 580, end: 615 },
-  { lane: 0, id: "Tang", start: 620, end: 900 },
-  { lane: 0, id: "Song", start: 960, end: 1265 },
-  { lane: 0, id: "Yuan", start: 1270, end: 1365 },
-  { lane: 0, id: "Ming", start: 1370, end: 1640 },
-  { lane: 0, id: "Qing", start: 1645, end: 1910 },
-  { lane: 1, id: "Yamato", start: 300, end: 530 },
-  { lane: 1, id: "Asuka", start: 550, end: 700 },
-  { lane: 1, id: "Nara", start: 710, end: 790 },
-  { lane: 1, id: "Heian", start: 800, end: 1180 },
-  { lane: 1, id: "Kamakura", start: 1190, end: 1330 },
-  { lane: 1, id: "Muromachi", start: 1340, end: 1560 },
-  { lane: 1, id: "Edo", start: 1610, end: 1860 },
-  { lane: 1, id: "Meiji", start: 1870, end: 1900 },
-  { lane: 1, id: "Taisho", start: 1910, end: 1920 },
-  { lane: 1, id: "Showa", start: 1925, end: 1985 },
-  { lane: 1, id: "Heisei", start: 1990, end: 1995 },
-  { lane: 2, id: "Three Kingdoms", start: 10, end: 670 },
-  { lane: 2, id: "North and South States", start: 690, end: 900 },
-  { lane: 2, id: "Goryeo", start: 920, end: 1380 },
-  { lane: 2, id: "Joseon", start: 1390, end: 1890 }
-];
+const events = [WHO, China, Europe, France, Italy, Japan, SouthKorea, Spain, USA];
 
-export { old_data };
+const countryNames = [
+  "China",
+  "France",
+  "Italy",
+  "Japan",
+  "South Korea",
+  "Spain",
+  "USA",
+].sort();
+
+export { countryNames, events };

@@ -3,7 +3,28 @@
     "published_date": "2020-01-21T18:13:51Z",
     "url": "https://edition.cnn.com/2020/01/21/health/wuhan-coronavirus-first-us-case-cdc-bn/index.html",
     "title": "First US case of Wuhan coronavirus confirmed by CDC",
-    "tags": ["announcement", "announce_first_case"],
+    "tags": ["announcement", "first_case"],
     "entity": "government"
+  },
+  {
+    "title": "Google Tells All North America Staff to Work From Home",
+    "url": "https://www.bloomberg.com/news/articles/2020-03-10/google-tells-all-north-america-staff-to-work-from-home",
+    "tags": ["announcement", "rule_change"],
+    "entity": "company",
+    "published_date": "2020-03-10T21:33:04.725Z"
+  },
+  {
+    "title": "Help Take the Fight to COVID-19 with BOINC and Folding@home",
+    "url": "https://unraid.net/blog/help-take-the-fight-to-covid-19-with-boinc-or-folding-home",
+    "published_date": "2020-03-14T02:01:00-07:00",
+    "entity": "company",
+    "tags": ["free_help"]
+  },
+  {
+    "title": "Coronavirus tracked: the latest figures as the pandemic spreads",
+    "url": "https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441",
+    "published_date": "2020-02-08T09:58:48.000Z",
+    "entity": "newspaper",
+    "tags": ["futurology"]
   }
 ]

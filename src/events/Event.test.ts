@@ -1,14 +1,13 @@
 import { Event as EventType, Events } from "../types/event";
 import { TimelineEvents } from "../types/timelineEvent";
 import * as Event from "./Event";
-import { GRAPH_BEGIN } from "../Timeline/boundaries";
 
 const event1: EventType = {
   published_date: "2020-01-05T00:00:00+00:00",
   url:
     "https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/",
   title: "Pneumonia of unknown cause – China",
-  tags: ["announcement", "announce_first_case"],
+  tags: ["announcement", "first_case"],
   entity: "government",
 };
 

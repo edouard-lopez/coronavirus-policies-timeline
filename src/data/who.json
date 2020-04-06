@@ -3,7 +3,14 @@
     "published_date": "2020-01-05T00:00:00+00:00",
     "url": "https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/",
     "title": "Pneumonia of unknown cause – China",
-    "tags": ["announcement", "announce_first_case"],
+    "tags": ["announcement", "first_case"],
     "entity": "government"
+  },
+  {
+    "title": "Coronavirus: l’Organisation mondiale de la santé reconnaît enfin l’état de pandémie",
+    "url": "https://www.lefigaro.fr/sciences/coronavirus-l-organisation-mondiale-de-la-sante-reconnait-enfin-l-etat-de-pandemie-20200311",
+    "tags": ["who", "announcement"],
+    "entity": "health_organization",
+    "published_date": "2020-03-11T19:28:40.000Z"
   }
 ]

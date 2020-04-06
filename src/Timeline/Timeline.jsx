@@ -1,16 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import drawGraph from "./drawGraph";
-import COUNTRIES from "../data/countries.ts";
-import WHO from "../data/who.json";
-import pandemic from "../data/pandemic.json";
+import {countryNames, events} from "../data/data.ts";
 import "./Timeline.css";
 import { buildD3Data } from "../events/Event";
 
-const dataset = buildD3Data([pandemic, WHO]);
+const dataset = buildD3Data(events);
 
 function Timeline() {
-  const [countries, setCountries] = useState(["pandemic", "WHO", ...COUNTRIES]);
-  const [data, setData] = useState(dataset);
+  const [countries] = useState(["pandemic", "WHO", ...countryNames]);
+  const [data] = useState(dataset);
 
   const graph = useRef(null);
   useEffect(() => drawGraph(graph, countries, data));

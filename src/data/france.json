@@ -3,7 +3,56 @@
     "published_date": "2020-03-03T21:06:04",
     "url": "https://www.liberation.fr/france/2020/03/03/penurie-de-masques-les-autorites-n-ont-pas-vu-plus-loin-que-le-bout-de-leur-nez_1780489",
     "title": "Pénurie de masques : les autorités n’ont pas vu plus loin que le bout de leur nez",
-    "tags": ["announcement", "announce_order", "mask"],
+    "tags": ["announcement", "order", "mask"],
     "entity": "government"
+  },
+  {
+    "title": "Coronavirus en France : des écoles fermées, les rassemblements de plus de 1 000 personnes interdits",
+    "url": "https://www.sudouest.fr/2020/03/08/coronavirus-7294562-10861.php",
+    "tags": ["restriction"],
+    "entity": "government",
+    "published_date": "2020-03-08"
+  },
+  {
+    "title": "\"Force majeure\", télétravail, relocalisations envisagées… Les mesures du gouvernement pour les entreprises et les salariés face au Covid-19",
+    "url": "https://www.francetvinfo.fr/sante/maladie/coronavirus/coronavirus-le-gouvernement-annonce-des-mesures-pour-les-entreprises-et-les-salaries_3845133.html",
+    "tags": ["rule_change"],
+    "entity": "government",
+    "published_date": "2020-02-28T14:38:27+01:00"
+  },
+  {
+    "title": "Coronavirus : Macron annonce la fermeture de tous les établissements scolaires à partir de lundi",
+    "url": "https://www.lemonde.fr/planete/live/2020/03/12/suspension-des-voyages-aux-etats-unis-etat-d-alerte-en-france-la-crise-du-coronavirus-en-direct_6032730_3244.html",
+    "tags": ["announcement", "restriction"],
+    "entity": "government",
+    "published_date": "2020-03-12T08:39:30+00:00"
+  },
+  {
+    "title": "Elections municipales : que se passerait-il en cas de report du second tour ?",
+    "url": "https://www.lemonde.fr/politique/article/2020/03/15/municipales-que-se-passerait-il-en-cas-de-report-du-second-tour_6033152_823448.html",
+    "published_date": "2020-03-15T12:59:02+00:00",
+    "entity": "newspaper",
+    "tags": ["futurology", "restriction", "democracy"]
+  },
+  {
+    "title": "Témoignage inquiétant d'un médecin : les hôpitaux ne dépistent plus pour des raisons économiques.",
+    "url": "https://www.lemondemoderne.media/covid-19/?fbclid=IwAR1wI86iPDbQkalxLxglOV2AQQpAw-1_JjC7G8nUVn7_HAZb57KOqNjDxk8",
+    "published_date": "2020-03-13T17:20:28+00:00",
+    "entity": "newspaper",
+    "tags": ["testing", "restriction", "economy"]
+  },
+  {
+    "title": "Affluence des grands jours au Marché d’Aligre à Paris malgré les mesures et consignes annoncées hier soir. #CoronavirusFrance #COVIDー19",
+    "url": "https://twitter.com/RemyBuisine/status/1239161728858042371?s=20",
+    "published_date": "2020-03-15T13:09:00+01:00",
+    "entity": "individual",
+    "tags": ["restriction"]
+  },
+  {
+    "title": "Municipales 2020 : la participation s’effondre à 38,77% à 17h, le point dans le Sud-Ouest",
+    "url": "https://www.sudouest.fr/2020/03/15/municipales-2020-taux-de-participation-18-38-en-forte-baisse-par-rapport-a-2014-7325929-10883.php",
+    "published_date": "2020-03-15T12:07:21+01:00",
+    "entity": "government",
+    "tags": ["democracy"]
   }
 ]
