@@ -1,6 +1,6 @@
 export type Entity =
   | "government" // Government statement | e.g. Europe, French government, local state or their representative
-  | "health_organization" // e.g. WHO, CDC, ECDC (Europe), CCDC (China), National health organization
+  | "health-organization" // e.g. WHO, CDC, ECDC (Europe), CCDC (China), National health organization
   | "academic" // e.g. University, research lab, etc.
   | "company" // Company representative | e.g. Dyson, Google, etc.
   | "individual" // private individual | e.g. Dr. XYZ

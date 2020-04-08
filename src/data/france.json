@@ -16,7 +16,7 @@
   {
     "title": "\"Force majeure\", télétravail, relocalisations envisagées… Les mesures du gouvernement pour les entreprises et les salariés face au Covid-19",
     "url": "https://www.francetvinfo.fr/sante/maladie/coronavirus/coronavirus-le-gouvernement-annonce-des-mesures-pour-les-entreprises-et-les-salaries_3845133.html",
-    "tags": ["rule_change"],
+    "tags": ["rule-change"],
     "entity": "government",
     "published_date": "2020-02-28T14:38:27+01:00"
   },
@@ -54,5 +54,153 @@
     "published_date": "2020-03-15T12:07:21+01:00",
     "entity": "government",
     "tags": ["democracy"]
+  },
+  {
+    "title": "Arrêté du 15 mars 2020 complétant l'arrêté du 14 mars 2020 portant diverses mesures relatives à la lutte contre la propagation du virus covid-19",
+    "url": "https://www.legifrance.gouv.fr/eli/arrete/2020/3/15/SSAS2007753A/jo/texte",
+    "published_date": "2020-03-15T00:00:00+01:00",
+    "entity": "government",
+    "tags": ["announcement", "restriction", "economy"]
+  },
+  {
+    "title": "Décret n° 2020-260 du 16 mars 2020 portant réglementation des déplacements dans le cadre de la lutte contre la propagation du virus covid-19 (confinement)",
+    "url": "https://www.legifrance.gouv.fr/eli/decret/2020/3/16/PRMX2007858D/jo/texte",
+    "published_date": "2020-03-16T00:00:00+01:00",
+    "entity": "government",
+    "tags": ["announcement", "stay-at-home", "restriction"]
+  },
+  {
+    "title": "Coronavirus : le groupe de luxe LVMH va fabriquer du gel hydroalcoolique pour le donner aux hôpitaux de Paris",
+    "url": "https://www.sudouest.fr/2020/03/16/coronavirus-le-groupe-de-luxe-lvmh-va-fabriquer-du-gel-hydroalcoolique-pour-le-donner-aux-hopitaux-de-paris-7332381-10861.php",
+    "published_date": "2020-03-16T12:24:27+01:00",
+    "entity": "company",
+    "tags": ["announcement", "pledge", "hand-sanitizer"]
+  },
+  {
+    "title": "REPLAY. Face au coronavirus, \"nous sommes en guerre\", déclare Emmanuel Macron. Regardez l'intégralité de l'allocution du président de la République",
+    "url": "https://www.francetvinfo.fr/sante/maladie/coronavirus/direct-coronavirus-regardez-les-annonces-d-emmanuel-macron-pour-lutter-contre-la-pandemie-de-covid-19_3870001.html",
+    "published_date": "2020-03-16T19:40:46+01:00",
+    "entity": "government",
+    "tags": ["announcement", "stay-at-home"]
+  },
+  {
+    "title": "Coronavirus stade 3 : le traitement à la chloroquine efficace, selon le professeur Raoult de l'IHU de Marseille",
+    "url": "https://france3-regions.francetvinfo.fr/provence-alpes-cote-d-azur/bouches-du-rhone/marseille/coronavirus-stade-3-traitement-chloroquine-efficace-professeur-raoult-ihu-marseille-1792037.html",
+    "published_date": "2020-03-16T20:41:10+01:00",
+    "entity": "government",
+    "tags": ["treatment"]
+  },
+  {
+    "title": "En Alsace, les hôpitaux tentent d'encaisser le choc du coronavirus",
+    "url": "https://www.20minutes.fr/strasbourg/2741095-20200316-coronavirus-alsace-40-ans-medecine-jamais-vu-ca-temoigne-chef-service-reanimation-colmar",
+    "published_date": "2020-03-16T15:24:18+01:00",
+    "entity": "health-organization",
+    "tags": ["virus"]
+  },
+  {
+    "title": "VRAI OU FAKE Coronavirus : oui, ce texto \"Alerte Covid-19\" a bien été envoyé par le gouvernement (et il en a le droit)",
+    "url": "https://www.francetvinfo.fr/sante/maladie/coronavirus/coronavirus-oui-ce-texto-alerte-covid-19-a-bien-ete-envoye-par-le-gouvernement-et-il-en-a-le-droit_3871207.html",
+    "published_date": "2020-03-17T16:46:25+01:00",
+    "entity": "newspaper",
+    "tags": ["announcement", "restriction", "stay-at-home"]
+  },
+  {
+    "title": "«La seule solution contre le coronavirus c’est un masque pour tous, partout, pendant trois semaines»",
+    "url": "https://www.youtube.com/watch?v=gPMwAcWeUZc",
+    "published_date": "2020-03-12T00:00:00+01:00",
+    "entity": "individual",
+    "tags": ["virus", "mask"]
+  },
+  {
+    "title": "CORONAVIRUS:JE VOUS IMPLORE- écrit le 15 mars 2020",
+    "url": "https://blogs.mediapart.fr/pierre-jacques-raybaud/blog/160320/coronavirusje-vous-implore-ecrit-le-15-mars-2020",
+    "published_date": "2020-03-16T00:32:31+01:00",
+    "entity": "individual",
+    "tags": ["mask", "stay-at-home", "restriction"]
+  },
+  {
+    "title": "Attestation de déplacement : comment l'utiliser avec son iPhone",
+    "url": "https://www.igen.fr/iphone/2020/03/attestation-de-deplacement-la-remplir-et-lutiliser-avec-son-iphone-113663",
+    "published_date": "2020-03-17CT13:00:00+01:00",
+    "entity": "government",
+    "tags": ["announcement", "stay-at-home", "restriction"]
+  },
+  {
+    "title": "L'attestation de déplacement n'est finalement PAS valable sur smartphone",
+    "url": "https://www.igen.fr/ailleurs/2020/03/lattestation-de-deplacement-nest-finalement-pas-valable-sur-smartphone-113687",
+    "published_date": "2020-03-18T12:06:00+01:00",
+    "entity": "government",
+    "tags": ["announcement", "stay-at-home", "turnaround"]
+  },
+  {
+    "title": "Coronavirus : les cliniques se mobilisent mais alertent sur le manque de matériel de protection (Les établissements privés promettent 4 000 lits afin de soulager les hôpitaux publics. )",
+    "url": "https://www.lemonde.fr/planete/article/2020/03/18/coronavirus-les-cliniques-se-mobilisent-mais-alertent-sur-le-manque-de-materiel-de-protection_6033522_3244.html",
+    "published_date": "2020-03-18T10:14:06+00:00",
+    "entity": "health-organization",
+    "tags": ["announcement", "pledge", "bed"]
+  },
+  {
+    "title": "Les retours d'expérience alsaciens invitent à une préparation rapide des hôpitaux",
+    "url": "https://www.hospimedia.fr/actualite/articles/20200317-gestion-les-retours-d-experience-alsaciens-invitent-a",
+    "published_date": "2020-03-17T17:57:33+01:00",
+    "entity": "health-organization",
+    "tags": ["announcement", "triage", "shortage", "bed"]
+  },
+  {
+    "title": "Le jogging éloigné de votre pâté de maison est interdit. Déjà des amendes pour ceux qui s'éloignent trop de leur domicile",
+    "url": "https://twitter.com/renaudpila/status/1240227054253113349",
+    "published_date": "2020-03-18T11:42:00+01:00",
+    "entity": "individual",
+    "tags": ["restriction", "stay-at-home"]
+  },
+  {
+    "title": "Coronavirus : le gouvernement prévoit d’instaurer un \"état d’urgence sanitaire\"",
+    "url": "https://www.sudouest.fr/2020/03/18/coronavirus-le-gouvernement-prevoit-d-instaurer-un-etat-d-urgence-sanitaire-7341137-10861.php",
+    "published_date": "2020-03-18T13:44:46+01:00",
+    "entity": "government",
+    "tags": ["rule-change", "restriction", "democracy"]
+  },
+  {
+    "title": "Coronavirus : Ricard fait don de 70000 litres d’alcool pour fabriquer du gel hydroalcoolique",
+    "url": "http://www.leparisien.fr/economie/coronavirus-ricard-fait-don-de-70000-litres-d-alcool-pour-fabriquer-du-gel-hydroalcoolique-18-03-2020-8282838.php",
+    "published_date": "2020-03-18T15:03:55+01:00",
+    "entity": "company",
+    "tags": ["announcement", "shortage", "hand-sanitizer", "pledge"]
+  },
+  {
+    "title": "UPDATE Coronavirus : Armageddon ou Foutaise ? (Dr Ph.Devos)",
+    "url": "https://www.lespecialiste.be/fr/debats/coronavirus-armageddon-ou-foutaise.html",
+    "published_date": "2020-03-02T00:00:00+01:00",
+    "entity": "individual",
+    "tags": ["shortage", "bed", "virus", "futurology"]
+  },
+  {
+    "title": "11 questions très simples sur le coronavirus.",
+    "url": "https://twitter.com/brutofficiel/status/1240022059981459460",
+    "published_date": "2020-03-17T22:07:00+01:00",
+    "entity": "individual",
+    "tags": ["virus"]
+  },
+  {
+    "title": "Coronavirus : comment concilier travail et confinement ? 🤔 Décryptage avec le ministre de la Santé @olivierveran dans #Quotidien",
+    "url": "https://twitter.com/Qofficiel/status/1240363230251417601",
+    "published_date": "2020-03-18T20:43:00+01:00",
+    "entity": "government",
+    "tags": ["stay-at-home", "restriction", "turnaround"]
+  },
+  {
+    "title": "Covid-19 : les personnes fragiles peuvent bénéficier d'un arrêt de travail",
+    "url": "https://www.ameli.fr/gironde/assure/actualites/covid-19-les-personnes-fragiles-peuvent-beneficier-dun-arret-de-travail",
+    "published_date": "2020-03-19T00:00:00+01:00",
+    "entity": "government",
+    "tags": ["rule-change", "stay-at-home"]
+  },
+
+  {
+    "title": "Coronavirus : la France passe la barre des 10 000 morts",
+    "url": "https://www.sudouest.fr/2020/04/07/coronavirus-la-france-passe-la-barre-des-10-000-morts-7394948-10618.php",
+    "published_date": "2020-04-07T19:50:48+02:00",
+    "entity": "government",
+    "tags": ["announcement", "virus", "health-care"]
   }
 ]

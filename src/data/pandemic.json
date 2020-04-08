@@ -61,5 +61,33 @@
     "published_date": "2020-03-14T16:54:19",
     "entity": "newspaper",
     "tags": ["futurology", "treatment"]
-  }
+  },
+  {
+    "title": "https://www.washingtonpost.com/graphics/2020/world/corona-simulator/",
+    "url": "These simulations show how to flatten the coronavirus growth curve",
+    "published_date": "2020-03-14T21:00:00.000Z",
+    "entity": "newspaper",
+    "tags": ["futurology", "dataviz", "virus"]
+  },
+  {
+    "title": "Coronavirus: the new disease Covid-19 explained",
+    "url": "https://multimedia.scmp.com/infographics/news/china/article/3047038/wuhan-virus/index.html",
+    "published_date": "2020-01-21T00:00:00.000Z",
+    "entity": "newspaper",
+    "tags": ["virus", "dataviz"]
+  },
+  {
+    "title": "Aerosol and Surface Stability of SARS-CoV-2 as Compared with SARS-CoV-1",
+    "url": "https://www.nejm.org/doi/10.1056/NEJMc2004973",
+    "published_date": "2020-03-17T00:00:00+01:00",
+    "entity": "academic",
+    "tags": ["virus"]
+  },
+  {
+    "title": "Broad-spectrum antiviral agents (BSAAs) and viruses they inhibit:",
+    "url": "https://drugvirus.info/",
+    "published_date": "2020-01-25T00:00:00+01:00",
+    "entity": "academic",
+    "tags": ["virus", "treatment"]
+  },
 ]
