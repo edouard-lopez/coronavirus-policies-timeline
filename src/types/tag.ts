@@ -14,7 +14,7 @@ export type Tag =
   | "futurology" // projection of the evolution
   | "hand-sanitizer" // shortage, shipping, etc.
   | "health-care" // health care system
-  | "mask" 
+  | "mask" // FFP2
   | "order" // order equipment
   | "pledge" // company or individual announcing help (supposedly free)
   | "respirator" // respirator devices/parts, etc.
