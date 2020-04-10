@@ -1,5 +1,5 @@
 import { Event as EventType, Events } from "../types/event";
-import { TimelineEvents } from "../types/timelineEvent";
+import { TimelineEvents, TimelineEvent } from "../types/timelineEvent";
 import * as Event from "./Event";
 
 const event1: EventType = {
@@ -7,8 +7,9 @@ const event1: EventType = {
   url:
     "https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/",
   title: "Pneumonia of unknown cause – China",
-  tags: ["announcement", "first_case"],
+  tags: ["announcement", "first-case"],
   entity: "government",
+  scope: "World"
 };
 
 const event2: EventType = {
@@ -18,6 +19,7 @@ const event2: EventType = {
   title: "China's first confirmed Covid-19 case traced back to November 17",
   tags: ["virus"],
   entity: "government",
+  scope: "Europe"
 };
 
 test("add `start` and `end` based on published date", () => {
@@ -25,18 +27,14 @@ test("add `start` and `end` based on published date", () => {
   expect(newEvent).toEqual({ ...event1, start: 238, end: 243 });
 });
 
-test("addD3Metadata to all items", () => {
-  const dataset: Events = [event1, { ...event1, entity: "individual" }];
-  const lane = 0;
+test("addD3Metadata to item", () => {
+  const newEvent: TimelineEvent = Event.addD3Metadata(event1);
 
-  const newEvents: Events = Event.addD3Metadata(dataset, lane);
-
-  expect(newEvents.length).toBe(2);
-  expect(newEvents[0]).toEqual({
+  expect(newEvent).toEqual({
     ...event1,
     start: 238,
     end: 243,
-    lane: 0,
+    lane: 5,
   });
 });
 
@@ -47,12 +45,12 @@ test("add `lane`", () => {
 });
 
 test("buildD3Data", () => {
-  const dataset: Array<Events> = [[event1], [event2]];
+  const dataset: Events = [event1, event2];
   const data: TimelineEvents = Event.buildD3Data(dataset);
 
   expect(data.length).toBe(2);
   expect(data).toEqual([
-    { ...event1, start: 238, end: 243, lane: 0 },
-    { ...event2, start: 569, end: 574, lane: 1 },
+    { ...event1, start: 238, end: 243, lane: 5 },
+    { ...event2, start: 569, end: 574, lane: 0 },
   ]);
 });
