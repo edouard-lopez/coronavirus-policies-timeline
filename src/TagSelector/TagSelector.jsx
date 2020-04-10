@@ -1,13 +1,13 @@
-import { countriesWithEvents } from "../CountrySelector/countries";
+import { tags } from "./tags";
 
 import React from "react";
 import { Select, SelectOption, SelectVariant } from "@patternfly/react-core";
 
-class CountrySelector extends React.Component {
+class TagsSelector extends React.Component {
   constructor(props) {
     super(props);
-    this.options = countriesWithEvents.map(country => ({
-      value: country,
+    this.options = tags.map(tag => ({
+      value: tag,
       disabled: false
     }));
 
@@ -55,11 +55,11 @@ class CountrySelector extends React.Component {
     return (
       <div>
         <span id={titleId} hidden>
-          Select one or multiple areas
+          Filter using one or multiple tags
         </span>
         <Select
           variant={SelectVariant.typeaheadMulti}
-          ariaLabelTypeAhead="Select one or multiple areas"
+          ariaLabelTypeAhead="Filter using one or multiple tags"
           onToggle={this.onToggle}
           onSelect={this.onSelect}
           onClear={this.clearSelection}
@@ -67,7 +67,7 @@ class CountrySelector extends React.Component {
           isExpanded={isExpanded}
           isPlain={isPlain}
           ariaLabelledBy={titleId}
-          placeholderText="Select one or multiple areas"
+          placeholderText="Filter using one or multiple tags"
         >
           {this.options.map((option, index) => (
             <SelectOption
@@ -82,4 +82,4 @@ class CountrySelector extends React.Component {
   }
 }
 
-export default CountrySelector;
+export default TagsSelector;

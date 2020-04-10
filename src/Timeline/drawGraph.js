@@ -39,7 +39,7 @@ const drawZoomArea = (
     .data(lanes)
     .enter()
     .append("text")
-    .text((d) => d)
+    .text((d, i) => d[i])
     .attr("x", -margin.right)
     .attr("y", (d, i) => yStartPoint(i + 0.5))
     .attr("dy", ".5ex")
@@ -85,11 +85,12 @@ const drawOverviewArea = (
     .data(lanes)
     .enter()
     .append("text")
-    .text((d) => d)
+    .text((d, i) => d[i])
     .attr("x", -margin.right)
     .attr("y", (d, i) => yEndPoint(i + 0.5))
     .attr("dy", ".5ex")
     .attr("text-anchor", "end")
+    .attr("x-country", (d, i) => d[i])
     .attr("class", "country-name pf-c-chip__text");
 
   //mini event rects
