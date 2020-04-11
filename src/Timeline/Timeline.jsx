@@ -1,26 +1,33 @@
 import React, { useState, useEffect, useRef } from "react";
+
 import drawGraph from "./drawGraph";
-import { countries } from "../CountrySelector/countries";
+import { countriesWithEvents } from "../Country/countries";
 import events from "../data/events.json";
 
 import "./Timeline.css";
 import { buildD3Data } from "../events/Event";
 
+const sortByScope = (a, b) => {
+  if (a.scope > b.scope) {
+    return 1;
+  }
+  if (a.scope < b.scope) {
+    return -1;
+  }
+  return 0;
+};
+
 const dataset = buildD3Data(events);
+dataset.sort(sortByScope);
 
 function Timeline() {
-  const [areas] = useState([countries]);
+  const [countries] = useState(countriesWithEvents);
   const [data] = useState(dataset);
 
   const graph = useRef(null);
-  useEffect(() => drawGraph(graph, areas, data));
+  useEffect(() => drawGraph(graph, countries, data));
 
-  return (
-    <div className="Timeline">
-      <h2>Timeline</h2>
-      <div ref={graph}></div>
-    </div>
-  );
+  return <div ref={graph}></div>;
 }
 
 export default Timeline;

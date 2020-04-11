@@ -1,5 +1,13 @@
 [
   {
+    "title": "Coronavirus : l’Europe suspend la règle poussant les avions à voler vides",
+    "url": "https://reporterre.net/Coronavirus-l-Europe-suspend-la-regle-poussant-les-avions-a-voler-vides",
+    "published_date": "2020-03-11",
+    "entity": "government",
+    "tags": ["rule-change", "aviation"],
+    "scope": "Europe"
+  },
+  {
     "title": "Canada to bar entry for most foreigners",
     "url": "https://www.bbc.com/news/world-us-canada-51861980",
     "published_date": "2020-03-16T21:12:18+00:00",
@@ -14,14 +22,6 @@
     "entity": "government",
     "tags": ["announcement", "first-case"],
     "scope": "China"
-  },
-  {
-    "title": "Coronavirus : l’Europe suspend la règle poussant les avions à voler vides",
-    "url": "https://reporterre.net/Coronavirus-l-Europe-suspend-la-regle-poussant-les-avions-a-voler-vides",
-    "published_date": "2020-03-11",
-    "entity": "government",
-    "tags": ["rule-change", "aviation"],
-    "scope": "Europe"
   },
   {
     "title": "Coronavirus: L'UE désapprouve la décision unilatérale américaine sur les voyages",

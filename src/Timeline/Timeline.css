@@ -1,14 +1,7 @@
 .chart {
   shape-rendering: crispEdges;
+  width: 100%;
 }
-
-/* .overviewArea text {
-  font-size: var(--pf-global--FontSize--xs);
-}
-
-.zoomArea text {
-  font-size: var(--pf-global--FontSize--md);
-} */
 
 :root {
   --pf-c-chip__text--FontSize: var(--pf-global--FontSize--xs);
