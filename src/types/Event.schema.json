@@ -17,7 +17,6 @@
       },
       "Tag": {
         "enum": [
-          "DIY",
           "announcement",
           "aviation",
           "bed",
@@ -27,6 +26,8 @@
           "dataviz",
           "democracy",
           "distribution",
+          "DIY",
+          "drug",
           "economy",
           "first-case",
           "futurology",
@@ -38,6 +39,7 @@
           "respirator",
           "restriction",
           "rule-change",
+          "shipping",
           "shortage",
           "stay-at-home",
           "testing",
