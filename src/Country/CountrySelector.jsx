@@ -1,4 +1,4 @@
-import { countriesWithEvents } from "../CountrySelector/countries";
+import { countriesWithEvents } from "./countries";
 
 import React from "react";
 import { Select, SelectOption, SelectVariant } from "@patternfly/react-core";

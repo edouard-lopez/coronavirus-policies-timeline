@@ -198,5 +198,6 @@ const countries = [
 const countriesWithEvents = Array.from(
   new Set((events as Events).map((event: Event) => event.scope))
 );
+countriesWithEvents.sort();
 
 export { countries, countriesWithEvents };
