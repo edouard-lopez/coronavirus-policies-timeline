@@ -2,6 +2,8 @@
 
 > Keeping track of available information and actions taken by government worldwide relative to the SARS-CoV-2 pandemic (_i.e._ _Coronavirus_ or _covid-19_) responsible for various healthcare system failure.
 
+[![preview](./preview.png)](./preview.png)
+
 ## Onboarding
 
 In the project directory, you can run:
