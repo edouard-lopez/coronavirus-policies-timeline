@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "array",
   "items": {
-    "required": ["entity", "published_date", "tags", "title", "url", "scope"],
+    "required": ["entity", "published_date", "tags", "title", "url", "region"],
     "definitions": {
       "Entity": {
         "enum": [
@@ -49,7 +49,7 @@
           "virus"
         ]
       },
-      "Scope": {
+      "Region": {
         "enum": [
           "Europe",
           "Asia",
@@ -264,9 +264,9 @@
       "url": {
         "type": "string"
       },
-      "scope": {
+      "region": {
         "type": "string",
-        "$ref": "#/items/definitions/Scope"
+        "$ref": "#/items/definitions/Region"
       }
     },
     "type": "object"

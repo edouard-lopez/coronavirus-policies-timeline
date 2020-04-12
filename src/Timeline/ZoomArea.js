@@ -1,5 +1,5 @@
 import { addLines } from "./Lines";
-import { addCountryLabels } from "./CountryLabels.js";
+import { addRegionLabels } from "./RegionLabels.js";
 
 export const drawZoomArea = (
   data,
@@ -15,7 +15,7 @@ export const drawZoomArea = (
 
   //zoomArea lanes and texts
   addLines(zoomArea, data, { margin, width, positionAt: yStartPoint });
-  addCountryLabels(zoomArea, lanes, {
+  addRegionLabels(zoomArea, lanes, {
     margin,
     positionAt: yStartPoint,
     classes: ["pf-c-title"],

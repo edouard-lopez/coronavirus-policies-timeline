@@ -1,7 +1,6 @@
+import { colorize } from "./colors";
 import { addLines } from "./Lines";
-import { addCountryLabels } from "./CountryLabels.js";
-import { title } from "./Brush";
-import { colors, colorize } from "./colors";
+import { addRegionLabels } from "./RegionLabels.js";
 
 export const drawOverviewArea = (
   data,
@@ -20,7 +19,7 @@ export const drawOverviewArea = (
 
   //mini lanes and texts
   addLines(overviewArea, data, { margin, width, positionAt: yEndPoint });
-  addCountryLabels(overviewArea, lanes, {
+  addRegionLabels(overviewArea, lanes, {
     margin,
     positionAt: yEndPoint,
     classes: ["pf-c-chip__text"],

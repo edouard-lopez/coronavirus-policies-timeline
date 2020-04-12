@@ -9,7 +9,7 @@ import {
 } from "@patternfly/react-core";
 
 import Timeline from "./Timeline/Timeline";
-import CountrySelector from "./Country/CountrySelector";
+import RegionSelector from "./Region/RegionSelector";
 import TagSelector from "./Tag/TagSelector";
 import EntitySelector from "./Entity/EntitySelector";
 
@@ -45,7 +45,7 @@ function App() {
             <h2>Selection</h2>
           </FlexItem>
           <FlexItem>
-            <CountrySelector />
+            <RegionSelector />
           </FlexItem>
           <FlexItem>
             <TagSelector />

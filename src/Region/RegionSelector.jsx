@@ -1,13 +1,13 @@
-import { countriesWithEvents } from "./countries";
+import { regionsWithEvents } from "./regions";
 
 import React from "react";
 import { Select, SelectOption, SelectVariant } from "@patternfly/react-core";
 
-class CountrySelector extends React.Component {
+class RegionSelector extends React.Component {
   constructor(props) {
     super(props);
-    this.options = countriesWithEvents.map(country => ({
-      value: country,
+    this.options = regionsWithEvents.map(region => ({
+      value: region,
       disabled: false
     }));
 
@@ -82,4 +82,4 @@ class CountrySelector extends React.Component {
   }
 }
 
-export default CountrySelector;
+export default RegionSelector;

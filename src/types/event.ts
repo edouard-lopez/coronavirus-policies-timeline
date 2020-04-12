@@ -1,6 +1,6 @@
 import { Entity } from "./entity";
 import { Tag } from "./tag";
-import { Scope } from "./scope";
+import { Region } from "./region";
 
 export interface Event {
   published_date: string;
@@ -8,7 +8,7 @@ export interface Event {
   title: string;
   entity: Entity;
   tags: Array<Tag>;
-  scope: Scope;
+  region: Region;
 }
 
 export type Events = Array<Event>;

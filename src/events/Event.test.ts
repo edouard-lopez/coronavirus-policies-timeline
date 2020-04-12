@@ -1,5 +1,7 @@
+import { regionsWithEvents } from "../Region/regions";
 import { Event as EventType, Events } from "../types/event";
-import { TimelineEvents, TimelineEvent } from "../types/timelineEvent";
+import { Regions } from "../types/region";
+import { TimelineEvent, TimelineEvents } from "../types/timelineEvent";
 import * as Event from "./Event";
 
 const event1: EventType = {
@@ -9,7 +11,7 @@ const event1: EventType = {
   title: "Pneumonia of unknown cause – China",
   tags: ["announcement", "first-case"],
   entity: "government",
-  scope: "World"
+  region: "World",
 };
 
 const event2: EventType = {
@@ -19,7 +21,7 @@ const event2: EventType = {
   title: "China's first confirmed Covid-19 case traced back to November 17",
   tags: ["virus"],
   entity: "government",
-  scope: "Europe"
+  region: "Europe",
 };
 
 test("add `start` and `end` based on published date", () => {
@@ -28,13 +30,14 @@ test("add `start` and `end` based on published date", () => {
 });
 
 test("addD3Metadata to item", () => {
-  const newEvent: TimelineEvent = Event.addD3Metadata(event1);
+  const regions:Regions = ["France", "Europe", "World"];
+  const newEvent: TimelineEvent = Event.addD3Metadata(event1, regions);
 
   expect(newEvent).toEqual({
     ...event1,
     start: 238,
     end: 243,
-    lane: 5,
+    lane: regions.indexOf("World"),
   });
 });
 
@@ -50,7 +53,7 @@ test("buildD3Data", () => {
 
   expect(data.length).toBe(2);
   expect(data).toEqual([
-    { ...event1, start: 238, end: 243, lane: 5 },
-    { ...event2, start: 569, end: 574, lane: 0 },
+    { ...event1, start: 238, end: 243, lane: regionsWithEvents.indexOf("World") },
+    { ...event2, start: 569, end: 574, lane: regionsWithEvents.indexOf("Europe") },
   ]);
 });

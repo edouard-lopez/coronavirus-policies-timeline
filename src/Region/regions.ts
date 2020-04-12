@@ -1,8 +1,8 @@
 import events from "../data/events.json";
 import { Event, Events } from "../types/event";
 
-const countries = [
-  // countries or regional blocks
+const regions = [
+  // regions or regional blocks
   "Europe",
   "Asia",
   "Africa",
@@ -195,9 +195,9 @@ const countries = [
   "Zimbabwe",
 ] as const;
 
-const countriesWithEvents = Array.from(
-  new Set((events as Events).map((event: Event) => event.scope))
+const regionsWithEvents = Array.from(
+  new Set((events as Events).map((event: Event) => event.region))
 );
-countriesWithEvents.sort();
+regionsWithEvents.sort();
 
-export { countries, countriesWithEvents };
+export { regions, regionsWithEvents };

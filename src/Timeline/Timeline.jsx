@@ -1,31 +1,31 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import drawGraph from "./drawGraph";
-import { countriesWithEvents } from "../Country/countries";
+import { regionsWithEvents } from "../Region/regions";
 import events from "../data/events.json";
 
 import "./Timeline.css";
 import { buildD3Data } from "../events/Event";
 
-const sortByScope = (a, b) => {
-  if (a.scope > b.scope) {
+const sortByRegion = (a, b) => {
+  if (a.region > b.region) {
     return 1;
   }
-  if (a.scope < b.scope) {
+  if (a.region < b.region) {
     return -1;
   }
   return 0;
 };
 
 const dataset = buildD3Data(events);
-dataset.sort(sortByScope);
+dataset.sort(sortByRegion);
 
 function Timeline() {
-  const [countries] = useState(countriesWithEvents);
+  const [regions] = useState(regionsWithEvents);
   const [data] = useState(dataset);
 
   const graph = useRef(null);
-  useEffect(() => drawGraph(graph, countries, data));
+  useEffect(() => drawGraph(graph, regions, data));
 
   return <div ref={graph}></div>;
 }

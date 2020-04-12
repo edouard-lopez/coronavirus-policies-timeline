@@ -5,7 +5,7 @@
     "published_date": "2020-03-11",
     "entity": "government",
     "tags": ["rule-change", "aviation"],
-    "scope": "Europe"
+    "region": "Europe"
   },
   {
     "title": "Canada to bar entry for most foreigners",
@@ -13,7 +13,7 @@
     "published_date": "2020-03-16T21:12:18+00:00",
     "entity": "government",
     "tags": ["announcement", "restriction", "aviation"],
-    "scope": "Canada"
+    "region": "Canada"
   },
   {
     "title": "Chinese scientists identify the ‘Wuhan Virus’. Screening continues on Thai-bound flights.",
@@ -21,7 +21,7 @@
     "published_date": "2020-01-09T12:46:52+00:00",
     "entity": "government",
     "tags": ["announcement", "first-case"],
-    "scope": "China"
+    "region": "China"
   },
   {
     "title": "Coronavirus: L'UE désapprouve la décision unilatérale américaine sur les voyages",
@@ -29,7 +29,7 @@
     "published_date": "2020-03-12T13:32:03+0100",
     "entity": "government",
     "tags": ["aviation", "restriction"],
-    "scope": "Europe"
+    "region": "Europe"
   },
   {
     "title": "Pénurie de masques : les autorités n’ont pas vu plus loin que le bout de leur nez",
@@ -37,7 +37,7 @@
     "published_date": "2020-03-03T21:06:04",
     "entity": "government",
     "tags": ["announcement", "order", "mask"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus en France : des écoles fermées, les rassemblements de plus de 1 000 personnes interdits",
@@ -45,7 +45,7 @@
     "published_date": "2020-03-08",
     "entity": "government",
     "tags": ["restriction"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "\"Force majeure\", télétravail, relocalisations envisagées… Les mesures du gouvernement pour les entreprises et les salariés face au Covid-19",
@@ -53,7 +53,7 @@
     "published_date": "2020-02-28T14:38:27+01:00",
     "entity": "government",
     "tags": ["rule-change"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus : Macron annonce la fermeture de tous les établissements scolaires à partir de lundi",
@@ -61,7 +61,7 @@
     "published_date": "2020-03-12T08:39:30+00:00",
     "entity": "government",
     "tags": ["announcement", "restriction"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Elections municipales : que se passerait-il en cas de report du second tour ?",
@@ -69,7 +69,7 @@
     "published_date": "2020-03-15T12:59:02+00:00",
     "entity": "newspaper",
     "tags": ["futurology", "restriction", "democracy"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Témoignage inquiétant d'un médecin : les hôpitaux ne dépistent plus pour des raisons économiques.",
@@ -77,7 +77,7 @@
     "published_date": "2020-03-13T17:20:28+00:00",
     "entity": "newspaper",
     "tags": ["testing", "restriction", "economy"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Affluence des grands jours au Marché d’Aligre à Paris malgré les mesures et consignes annoncées hier soir. #CoronavirusFrance #COVIDー19",
@@ -85,7 +85,7 @@
     "published_date": "2020-03-15T13:09:00+01:00",
     "entity": "individual",
     "tags": ["restriction"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Municipales 2020 : la participation s’effondre à 38,77% à 17h, le point dans le Sud-Ouest",
@@ -93,7 +93,7 @@
     "published_date": "2020-03-15T12:07:21+01:00",
     "entity": "government",
     "tags": ["democracy"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Arrêté du 15 mars 2020 complétant l'arrêté du 14 mars 2020 portant diverses mesures relatives à la lutte contre la propagation du virus covid-19",
@@ -101,7 +101,7 @@
     "published_date": "2020-03-15T00:00:00+01:00",
     "entity": "government",
     "tags": ["announcement", "restriction", "economy"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Décret n° 2020-260 du 16 mars 2020 portant réglementation des déplacements dans le cadre de la lutte contre la propagation du virus covid-19 (confinement)",
@@ -109,7 +109,7 @@
     "published_date": "2020-03-16T00:00:00+01:00",
     "entity": "government",
     "tags": ["announcement", "stay-at-home", "restriction"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus : le groupe de luxe LVMH va fabriquer du gel hydroalcoolique pour le donner aux hôpitaux de Paris",
@@ -117,7 +117,7 @@
     "published_date": "2020-03-16T12:24:27+01:00",
     "entity": "company",
     "tags": ["announcement", "pledge", "hand-sanitizer"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "REPLAY. Face au coronavirus, \"nous sommes en guerre\", déclare Emmanuel Macron. Regardez l'intégralité de l'allocution du président de la République",
@@ -125,7 +125,7 @@
     "published_date": "2020-03-16T19:40:46+01:00",
     "entity": "government",
     "tags": ["announcement", "stay-at-home"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus stade 3 : le traitement à la chloroquine efficace, selon le professeur Raoult de l'IHU de Marseille",
@@ -133,7 +133,7 @@
     "published_date": "2020-03-16T20:41:10+01:00",
     "entity": "government",
     "tags": ["treatment"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "En Alsace, les hôpitaux tentent d'encaisser le choc du coronavirus",
@@ -141,7 +141,7 @@
     "published_date": "2020-03-16T15:24:18+01:00",
     "entity": "health-organization",
     "tags": ["virus"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "VRAI OU FAKE Coronavirus : oui, ce texto \"Alerte Covid-19\" a bien été envoyé par le gouvernement (et il en a le droit)",
@@ -149,7 +149,7 @@
     "published_date": "2020-03-17T16:46:25+01:00",
     "entity": "newspaper",
     "tags": ["announcement", "restriction", "stay-at-home"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "«La seule solution contre le coronavirus c’est un masque pour tous, partout, pendant trois semaines»",
@@ -157,7 +157,7 @@
     "published_date": "2020-03-12T00:00:00+01:00",
     "entity": "individual",
     "tags": ["virus", "mask"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "CORONAVIRUS:JE VOUS IMPLORE- écrit le 15 mars 2020",
@@ -165,7 +165,7 @@
     "published_date": "2020-03-16T00:32:31+01:00",
     "entity": "individual",
     "tags": ["mask", "stay-at-home", "restriction"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Attestation de déplacement : comment l'utiliser avec son iPhone",
@@ -173,7 +173,7 @@
     "published_date": "2020-03-17CT13:00:00+01:00",
     "entity": "government",
     "tags": ["announcement", "stay-at-home", "restriction"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "L'attestation de déplacement n'est finalement PAS valable sur smartphone",
@@ -181,7 +181,7 @@
     "published_date": "2020-03-18T12:06:00+01:00",
     "entity": "government",
     "tags": ["announcement", "stay-at-home", "turnaround"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus : les cliniques se mobilisent mais alertent sur le manque de matériel de protection (Les établissements privés promettent 4 000 lits afin de soulager les hôpitaux publics. )",
@@ -189,7 +189,7 @@
     "published_date": "2020-03-18T10:14:06+00:00",
     "entity": "health-organization",
     "tags": ["announcement", "pledge", "bed"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Les retours d'expérience alsaciens invitent à une préparation rapide des hôpitaux",
@@ -197,7 +197,7 @@
     "published_date": "2020-03-17T17:57:33+01:00",
     "entity": "health-organization",
     "tags": ["announcement", "triage", "shortage", "bed"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Le jogging éloigné de votre pâté de maison est interdit. Déjà des amendes pour ceux qui s'éloignent trop de leur domicile",
@@ -205,7 +205,7 @@
     "published_date": "2020-03-18T11:42:00+01:00",
     "entity": "individual",
     "tags": ["restriction", "stay-at-home"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus : le gouvernement prévoit d’instaurer un \"état d’urgence sanitaire\"",
@@ -213,7 +213,7 @@
     "published_date": "2020-03-18T13:44:46+01:00",
     "entity": "government",
     "tags": ["rule-change", "restriction", "democracy"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus : Ricard fait don de 70000 litres d’alcool pour fabriquer du gel hydroalcoolique",
@@ -221,7 +221,7 @@
     "published_date": "2020-03-18T15:03:55+01:00",
     "entity": "company",
     "tags": ["announcement", "shortage", "hand-sanitizer", "pledge"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "UPDATE Coronavirus : Armageddon ou Foutaise ? (Dr Ph.Devos)",
@@ -229,7 +229,7 @@
     "published_date": "2020-03-02T00:00:00+01:00",
     "entity": "individual",
     "tags": ["shortage", "bed", "virus", "futurology"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "11 questions très simples sur le coronavirus.",
@@ -237,7 +237,7 @@
     "published_date": "2020-03-17T22:07:00+01:00",
     "entity": "individual",
     "tags": ["virus"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus : comment concilier travail et confinement ? 🤔 Décryptage avec le ministre de la Santé @olivierveran dans #Quotidien",
@@ -245,7 +245,7 @@
     "published_date": "2020-03-18T20:43:00+01:00",
     "entity": "government",
     "tags": ["stay-at-home", "restriction", "turnaround"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Covid-19 : les personnes fragiles peuvent bénéficier d'un arrêt de travail",
@@ -253,7 +253,7 @@
     "published_date": "2020-03-19T00:00:00+01:00",
     "entity": "government",
     "tags": ["rule-change", "stay-at-home"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus en Gironde : les quais de Bordeaux interdits d’accès",
@@ -261,7 +261,7 @@
     "published_date": "2020-03-19T12:25:34+01:00",
     "entity": "government",
     "tags": ["stay-at-home", "restriction", "rule-change"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus : des villes balnéaires de l’Atlantique veulent interdire l’accès aux plages",
@@ -269,7 +269,7 @@
     "published_date": " 2020-03-18T18:46:16+01:00",
     "entity": "government",
     "tags": ["stay-at-home", "restriction", "rule-change"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Lyon: des sans-abri verbalisés pour non-respect des mesures de confinement, la préfecture ouvre une enquête interne",
@@ -277,7 +277,7 @@
     "published_date": "2020-03-19T19:31:17+01:00",
     "entity": "newspaper",
     "tags": ["stay-at-home", "behavior"],
-    "scope": "France"
+    "region": "France"
   },
 
   {
@@ -286,7 +286,7 @@
     "published_date": "2020-04-07T19:50:48+02:00",
     "entity": "government",
     "tags": ["announcement", "virus", "health-care"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Two first coronavirus cases confirmed in Italy - prime minister",
@@ -294,7 +294,7 @@
     "published_date": "2020-01-30T21:34:00+00:00",
     "entity": "government",
     "tags": ["announcement", "first-case"],
-    "scope": "Italy"
+    "region": "Italy"
   },
   {
     "title": "En Italie, l'impression 3D a sauvé la vie de patients atteints du Covid-19",
@@ -302,7 +302,7 @@
     "published_date": "2020-03-16T00:00:00+00:00",
     "entity": "company",
     "tags": ["respirator", "pledge", "copyright"],
-    "scope": "Italy"
+    "region": "Italy"
   },
   {
     "title": "Coronavirus: Experiment in northern Italian town halts all new infections after trial",
@@ -310,7 +310,7 @@
     "published_date": "2020-03-18T11:03:00",
     "entity": "government",
     "tags": ["virus", "testing", "stay-at-home"],
-    "scope": "Italy"
+    "region": "Italy"
   },
   {
     "title": "Coronavirus: 2,629 infected docs, nurses",
@@ -318,7 +318,7 @@
     "published_date": "2020-03-18T12:21",
     "entity": "health-organization",
     "tags": ["virus", "health-care"],
-    "scope": "Italy"
+    "region": "Italy"
   },
   {
     "title": "Le pape François à La Repubblica: «J’ai demandé au Seigneur d’arrêter l’épidémie avec sa main»",
@@ -326,7 +326,7 @@
     "published_date": "2020-03-18T08:33:38.000Z",
     "entity": "individual",
     "tags": ["virus", "treatment"],
-    "scope": "Italy"
+    "region": "Italy"
   },
   {
     "title": "Japan confirms first case of infection from Wuhan coronavirus; Vietnam quarantines two tourists",
@@ -334,7 +334,7 @@
     "published_date": "2020-01-16T08:52:54+08:00",
     "entity": "government",
     "tags": ["announcement", "first-case"],
-    "scope": "Japan"
+    "region": "Japan"
   },
   {
     "title": "S. Korea reports 1st confirmed case of China coronavirus",
@@ -342,7 +342,7 @@
     "published_date": "2020-01-20T01:30+09:00",
     "entity": "government",
     "tags": ["announcement", "first-case"],
-    "scope": "Korea South"
+    "region": "Korea South"
   },
   {
     "title": "Spain confirms first case of coronavirus",
@@ -350,7 +350,7 @@
     "published_date": "2020-02-01T06:21:00+07:00",
     "entity": "government",
     "tags": ["announcement", "first-case"],
-    "scope": "Spain"
+    "region": "Spain"
   },
   {
     "title": "Coronavirus: UK schools, colleges and nurseries to close from Friday",
@@ -358,7 +358,7 @@
     "published_date": "2020-03-18T22:27:06+00:00",
     "entity": "government",
     "tags": ["announcement", "restriction"],
-    "scope": "United Kingdom"
+    "region": "United Kingdom"
   },
   {
     "title": "La stratégie risquée du Royaume-Uni pour lutter contre le coronavirus",
@@ -366,7 +366,7 @@
     "published_date": "2020-03-14T15:25:54+01:00",
     "entity": "government",
     "tags": ["virus", "restriction"],
-    "scope": "United Kingdom"
+    "region": "United Kingdom"
   },
   {
     "title": "Report 9: Impact of non-pharmaceutical interventions (NPIs) to reduce COVID19 mortality and healthcare demand",
@@ -374,7 +374,7 @@
     "published_date": "2020-03-16",
     "entity": "academic",
     "tags": ["virus", "stay-at-home", "futurology"],
-    "scope": "United Kingdom"
+    "region": "United Kingdom"
   },
   {
     "title": "First US case of Wuhan coronavirus confirmed by CDC",
@@ -382,7 +382,7 @@
     "published_date": "2020-01-21T18:13:51Z",
     "entity": "government",
     "tags": ["announcement", "first-case"],
-    "scope": "USA"
+    "region": "USA"
   },
   {
     "title": "Google Tells All North America Staff to Work From Home",
@@ -390,7 +390,7 @@
     "published_date": "2020-03-10T21:33:04.725Z",
     "entity": "company",
     "tags": ["announcement", "rule-change"],
-    "scope": "USA"
+    "region": "USA"
   },
   {
     "title": "Help Take the Fight to COVID-19 with BOINC and Folding@home",
@@ -398,7 +398,7 @@
     "published_date": "2020-03-14T02:01:00-07:00",
     "entity": "company",
     "tags": ["pledge"],
-    "scope": "USA"
+    "region": "USA"
   },
   {
     "title": "Coronavirus tracked: the latest figures as the pandemic spreads",
@@ -406,7 +406,7 @@
     "published_date": "2020-02-08T09:58:48.000Z",
     "entity": "newspaper",
     "tags": ["futurology"],
-    "scope": "USA"
+    "region": "USA"
   },
   {
     "title": "Folding@home takes up the fight against COVID-19 / 2019-nCoV",
@@ -414,7 +414,7 @@
     "published_date": "2020-02-27T19:57:00+00:00",
     "entity": "academic",
     "tags": ["virus", "announcement"],
-    "scope": "USA"
+    "region": "USA"
   },
   {
     "title": " As the coronavirus pandemic grows, gun sales are surging in many states ",
@@ -422,7 +422,7 @@
     "published_date": "2020-03-16T03:43:03.139Z",
     "entity": "newspaper",
     "tags": ["behavior"],
-    "scope": "USA"
+    "region": "USA"
   },
   {
     "title": "Pandemic “will last 18 months or longer,” leaked US gov’t report warns",
@@ -430,7 +430,7 @@
     "published_date": "2020-03-18T16:20:17+00:00",
     "entity": "government",
     "tags": ["shortage", "futurology"],
-    "scope": "USA"
+    "region": "USA"
   },
   {
     "title": "Volunteers produce 3D-printed valves for life-saving coronavirus treatments",
@@ -438,7 +438,7 @@
     "published_date": "2020-03-17T18:51:32-04:00",
     "entity": "individual",
     "tags": ["DIY", "shortage", "respirator", "pledge"],
-    "scope": "USA"
+    "region": "USA"
   },
   {
     "title": "Thousands flock to Florida beaches, ignoring coronavirus concerns",
@@ -446,7 +446,7 @@
     "published_date": "2020-03-17T18:07:44",
     "entity": "newspaper",
     "tags": ["behavior", "restriction"],
-    "scope": "USA"
+    "region": "USA"
   },
   {
     "title": "Celebrities Get Coronavirus Tests as Critically Ill Patients Struggle to Learn Status",
@@ -454,7 +454,7 @@
     "published_date": "2020-03-19",
     "entity": "newspaper",
     "tags": ["testing", "behavior"],
-    "scope": "USA"
+    "region": "USA"
   },
   {
     "url": "https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/",
@@ -462,7 +462,7 @@
     "published_date": "2020-01-05T00:00:00+00:00",
     "entity": "government",
     "tags": ["announcement", "first-case"],
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Coronavirus: l’Organisation mondiale de la santé reconnaît enfin l’état de pandémie",
@@ -470,7 +470,7 @@
     "published_date": "2020-03-11T19:28:40.000Z",
     "entity": "health-organization",
     "tags": ["announcement", "virus"],
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Coronavirus: Asian nations face virus battle amid WHO warning",
@@ -478,7 +478,7 @@
     "published_date": "2020-03-18T12:05:12+00:00",
     "entity": "newspaper",
     "tags": ["announcement", "aviation", "restriction", "testing"],
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "WHO Director-General's opening remarks at the media briefing on COVID-19 - 11 March 2020: Announce Pandemy",
@@ -486,7 +486,7 @@
     "published_date": "2020-03-11T00:00:00.000Z",
     "entity": "health-organization",
     "tags": ["announcement", "virus", "shortage"],
-    "scope": "World"
+    "region": "World"
   },
   {
     "published_date": "2020-03-13T08:00:17+08:00",
@@ -494,7 +494,7 @@
     "title": "China's first confirmed Covid-19 case traced back to November 17",
     "tags": ["virus"],
     "entity": "government",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Combien de temps le coronavirus survit sur ces différentes surfaces",
@@ -502,7 +502,7 @@
     "published_date": "2020-03-12T11:57:23+01:00",
     "entity": "academic",
     "tags": ["virus"],
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Coronavirus: Why You Must Act Now",
@@ -510,7 +510,7 @@
     "tags": ["futurology"],
     "published_date": "2020-04-05T06:49:35.783Z",
     "entity": "individual",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Coronavirus : le cri d'alarme des journalistes français en Italie",
@@ -518,7 +518,7 @@
     "tags": ["futurology"],
     "published_date": "2020-03-12T17:16:27.000Z",
     "entity": "individual",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "COVID-19 : « Il aurait fallu s’inspirer de Taïwan, mais c’est trop tard »",
@@ -526,7 +526,7 @@
     "tags": ["comparison"],
     "published_date": "2020-03-13T16:00:00.000Z",
     "entity": "newspaper",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "La Métropole de Bordeaux annonce de nouvelles restrictions contre le coronavirus",
@@ -534,7 +534,7 @@
     "tags": ["restriction"],
     "published_date": "2020-03-13T18:06:35+01:00",
     "entity": "government",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Un périmètre élargi pour les MOOC sur FUN durant l’épidémie de Coronavirus",
@@ -542,7 +542,7 @@
     "tags": ["announcement"],
     "published_date": "2020-03-13T00:00:00+01:00",
     "entity": "academic",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "A human monoclonal antibody blocking SARS-CoV-2 infection",
@@ -550,7 +550,7 @@
     "tags": ["virus", "treatment"],
     "published_date": "2020-03-12",
     "entity": "academic",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Covid-19 : États-Unis et Allemagne se battent pour le futur vaccin",
@@ -558,7 +558,7 @@
     "tags": ["futurology", "treatment"],
     "published_date": "2020-03-14T16:54:19",
     "entity": "newspaper",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "https://www.washingtonpost.com/graphics/2020/world/corona-simulator/",
@@ -566,7 +566,7 @@
     "tags": ["futurology", "dataviz", "virus"],
     "published_date": "2020-03-14T21:00:00.000Z",
     "entity": "newspaper",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Coronavirus: the new disease Covid-19 explained",
@@ -574,7 +574,7 @@
     "tags": ["virus", "dataviz"],
     "published_date": "2020-01-21T00:00:00.000Z",
     "entity": "newspaper",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Aerosol and Surface Stability of SARS-CoV-2 as Compared with SARS-CoV-1",
@@ -582,7 +582,7 @@
     "tags": ["virus"],
     "published_date": "2020-03-17T00:00:00+01:00",
     "entity": "academic",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Broad-spectrum antiviral agents (BSAAs) and viruses they inhibit:",
@@ -590,7 +590,7 @@
     "tags": ["virus", "treatment"],
     "published_date": "2020-01-25T00:00:00+01:00",
     "entity": "academic",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Emergence of SARS-CoV-2 through Recombination and Strong Purifying Selection",
@@ -598,7 +598,7 @@
     "tags": ["virus"],
     "published_date": " 2020-03-24 ",
     "entity": "academic",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Trade set to plunge as COVID-19 pandemic upends global economy",
@@ -606,7 +606,7 @@
     "tags": ["announcement", "futurology", "economy"],
     "published_date": "2020-04-08T00:00:00+01:00",
     "entity": "academic",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": " High Contagiousness and Rapid Spread of Severe Acute Respiratory Syndrome Coronavirus 2",
@@ -614,7 +614,7 @@
     "tags": ["virus", "stay-at-home"],
     "published_date": "2020-04-07",
     "entity": "academic",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Virus May Spread Twice as Fast as Earlier Thought, Study Says",
@@ -622,7 +622,7 @@
     "tags": ["virus"],
     "published_date": "2020-04-08T16:21:49.684Z",
     "entity": "academic",
-    "scope": "World"
+    "region": "World"
   },
   {
     "title": "Coronavirus. La France a commandé près de deux milliards de masques en Chine",
@@ -630,7 +630,7 @@
     "published_date": "2020-04-04T15:07:05+02:00",
     "entity": "government",
     "tags": ["announcement","mask","order"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus. Les masques commandés en Chine seront livrés en France d’ici la fin juin",
@@ -638,7 +638,7 @@
     "published_date": "2020-04-07T00:55:39+02:00",
     "entity": "government",
     "tags": ["announcement", "shortage", "mask", "shipping"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": " Médicaments face au Covid-19: faute d’anticipation, le système D ",
@@ -646,7 +646,7 @@
     "published_date": "2020-04-09T18:21:13+02:00",
     "entity": "health-organization",
     "tags": ["drug", "shortage", "health-care", "rule-change"],
-    "scope": "France"
+    "region": "France"
   },
   {
     "title": "Coronavirus : la chimie française produit près de 300 000 litres de gel hydroalcoolique par jour",
@@ -654,6 +654,6 @@
     "published_date": "2020-04-09T15:37:23+02:00",
     "entity": "company",
     "tags": ["hand-sanitizer", "hand-sanitizer"],
-    "scope": "France"
+    "region": "France"
   }
 ]

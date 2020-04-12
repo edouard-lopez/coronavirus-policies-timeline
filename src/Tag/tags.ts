@@ -3,7 +3,7 @@ export const tags = [
     "aviation", // aviation travel, industry
     "bed", // providing new beds
     "behavior", // social behavior in reaction to announcement or not
-    "comparison", // with other country that were hit before
+    "comparison", // with other region that were hit before
     "copyright", // infringement, lock, removal, etc.
     "dataviz", // dataviz explanation
     "democracy", // democratic and political life
@@ -11,7 +11,7 @@ export const tags = [
     "DIY", // 3D printing and other do-it yourself contribution
     "drug", // drug use and scarcity
     "economy", // impact, mitigation strategy, etc.
-    "first-case", // first detected case in a country
+    "first-case", // first detected case in a region
     "futurology", // projection of the evolution
     "hand-sanitizer", // shortage, shipping, etc.
     "health-care", // health care system

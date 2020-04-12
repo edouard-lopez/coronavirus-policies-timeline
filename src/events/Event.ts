@@ -1,8 +1,9 @@
 import { DateTime } from "luxon";
-import { Event, Events } from "../types/event";
-import { TimelineEvents, TimelineEvent } from "../types/timelineEvent";
+import { regionsWithEvents } from "../Region/regions";
 import { projectToGraph } from "../Timeline/boundaries";
-import { countriesWithEvents } from "../Country/countries";
+import { Event, Events } from "../types/event";
+import { Regions } from "../types/region";
+import { TimelineEvent, TimelineEvents } from "../types/timelineEvent";
 
 const buildD3Data = (dataset: Events): TimelineEvents => {
   const data: TimelineEvents = [];
@@ -18,8 +19,8 @@ const buildD3Data = (dataset: Events): TimelineEvents => {
 const addLane = (event: Event, lane: number): TimelineEvent =>
   ({ ...event, lane } as TimelineEvent);
 
-const addD3Metadata = (event: Event): TimelineEvent => {
-  const lane = countriesWithEvents.indexOf(event.scope);
+const addD3Metadata = (event: Event, regions:Regions = regionsWithEvents): TimelineEvent => {
+  const lane = regions.indexOf(event.region);
 
   return addLane(addStartAndEnd(event), lane);
 };
@@ -39,3 +40,4 @@ const addStartAndEnd = (event: Event) => {
 };
 
 export { buildD3Data, addLane, addD3Metadata, addStartAndEnd };
+
