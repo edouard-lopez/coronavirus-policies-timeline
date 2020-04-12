@@ -11,17 +11,6 @@
   stroke-width: 6;
   /* fill-opacity: 0.7; */
 }
-.event0 {
-  fill: var(--pf-global--palette--blue-200);
-}
-
-.event1 {
-  fill: var(--pf-global--palette--orange-200);
-}
-
-.event2 {
-  fill: var(--pf-global--palette--purple-200);
-}
 
 .brush .extent {
   stroke: gray;
@@ -41,4 +30,8 @@
 
 .region-name {
   fill: var(--pf-global--palette--black-700);
+}
+
+.zoom-event {
+  fill: drop-shadow( 1px 1px 1px rgba(0, 0, 0, .5));
 }

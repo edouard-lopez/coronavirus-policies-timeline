@@ -109,15 +109,6 @@ const colorize = (index) => {
   const color = index % length;
   const shade = Math.floor(index / length);
 
-  console.log(
-    "names[color]",
-    length,
-    index,
-    color,
-    shade,
-    colors[names[color]][shade]
-  );
-
   return `fill: var(${colors[names[color]][shade]})`;
 };
 export { colors, colorize };
