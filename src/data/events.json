@@ -417,7 +417,7 @@
     "region": "USA"
   },
   {
-    "title": " As the coronavirus pandemic grows, gun sales are surging in many states ",
+    "title": "As the coronavirus pandemic grows, gun sales are surging in many states",
     "url": "https://www.latimes.com/world-nation/story/2020-03-15/coronavirus-pandemic-gun-sales-surge-us-california",
     "published_date": "2020-03-16T03:43:03.139Z",
     "entity": "newspaper",
@@ -596,9 +596,17 @@
     "title": "Emergence of SARS-CoV-2 through Recombination and Strong Purifying Selection",
     "url": "https://www.biorxiv.org/content/10.1101/2020.03.20.000885v2",
     "tags": ["virus"],
-    "published_date": " 2020-03-24 ",
+    "published_date": "2020-03-24",
     "entity": "academic",
     "region": "World"
+  },
+  {
+    "title": "Coronavirus : Macron annonce la fermeture de tous les établissements scolaires à partir de lundi",
+    "url": "https://www.lemonde.fr/planete/live/2020/03/12/suspension-des-voyages-aux-etats-unis-etat-d-alerte-en-france-la-crise-du-coronavirus-en-direct_6032730_3244.html?highlight=1186035712",
+    "published_date": "2020-03-12T20:32:00",
+    "entity": "government",
+    "tags": ["announcement", "restriction"],
+    "region": "France"
   },
   {
     "title": "Trade set to plunge as COVID-19 pandemic upends global economy",
@@ -629,7 +637,7 @@
     "url": "https://www.ouest-france.fr/sante/virus/coronavirus/coronavirus-la-france-commande-pres-de-deux-milliards-de-masques-en-chine-6800249",
     "published_date": "2020-04-04T15:07:05+02:00",
     "entity": "government",
-    "tags": ["announcement","mask","order"],
+    "tags": ["announcement", "mask", "order"],
     "region": "France"
   },
   {
@@ -655,5 +663,117 @@
     "entity": "company",
     "tags": ["hand-sanitizer", "hand-sanitizer"],
     "region": "France"
-  }
+  },
+  {
+    "title": "Jérôme Salomon: \"5 millions de masques sont arrivés ce soir de Chine à l'aéroport Roissy-Charles de Gaulle\"",
+    "url": "https://www.bfmtv.com/mediaplayer/video/jerome-salomon-5-millions-de-masques-sont-arrives-ce-soir-de-chine-a-l-aeroport-roissy-charles-de-gaulle-1234646.html",
+    "published_date": "2020-03-29T19:42:34+0200",
+    "entity": "government",
+    "tags": ["mask", "shipping", "shortage"],
+    "region": "France"
+  },
+  {
+    "title": "Coronavirus : à son tour, le CHU d’Amiens a équipé ses soignants de sacs-poubelle",
+    "url": "https://www.lavoixdunord.fr/740689/article/2020-04-14/coronavirus-son-tour-le-chu-d-amiens-equipe-ses-soignants-avec-des-sacs#Echobox=1586853408",
+    "published_date": "2020-04-14T10:27:58",
+    "entity": "newspaper",
+    "tags": ["shortage"],
+    "region": "France"
+  },
+  {
+    "title": "Young and Unafraid of the Coronavirus Pandemic? Good for You. Now Stop Killing People | Opinion",
+    "url": "https://www.newsweek.com/young-unafraid-coronavirus-pandemic-good-you-now-stop-killing-people-opinion-1491797",
+    "published_date": "2020-03-11T14:29:15-04:00",
+    "entity": "individual",
+    "tags": ["behavior", "health-care"],
+    "region": "World"
+  },
+  {
+    "title": "Science Matters: Let's Talk About COVID-19",
+    "url": "https://www.coursera.org/learn/covid-19",
+    "published_date": "2020-03-13",
+    "entity": "academic",
+    "tags": ["virus"],
+    "region": "World"
+  },
+  {
+    "title": "I am an ICU doctor. You all need to take this shit seriously.",
+    "url": "https://www.reddit.com/r/TrueOffMyChest/comments/fhgjrm/i_am_an_icu_doctor_you_all_need_to_take_this_shit/",
+    "published_date": "2020-03-12T14:45:05+0100",
+    "entity": "individual",
+    "tags": ["virus", "health-care"],
+    "region": "World"
+  },
+  {
+    "title": "The Toughest Triage — Allocating Ventilators in a Pandemic",
+    "url": "https://doi.org/10.1056/NEJMp2005689",
+    "published_date": " 2020-03-23",
+    "entity": "academic",
+    "tags": ["respirator", "shortage", "triage"],
+    "region": "World"
+  },
+  {
+    "title": "'Such a simple thing to do': Why positioning Covid-19 patients on their stomachs can save lives",
+    "url": "https://edition.cnn.com/2020/04/14/health/coronavirus-prone-positioning/index.html",
+    "published_date": "2020-04-14T10:52:27Z ",
+    "entity": "newspaper",
+    "tags": ["health-care", "respirator"],
+    "region": "USA"
+  },
+  {
+    "title": "One third of NHS staff and key workers tested in the UK have coronavirus, amid concerns over access to protective equipment",
+    "url": "https://edition.cnn.com/2020/04/14/uk/uk-coronavirus-nhs-one-third-test-positive-gbr-intl/index.html",
+    "published_date": " 2020-04-14T10:36:27Z ",
+    "entity": "government",
+    "tags": ["testing", "health-care"],
+    "region": "United Kingdom"
+  },
+  {
+    "title": "Toulouse. 60 policiers municipaux arrêtés : le coronavirus décime les rangs des patrouilles",
+    "url": "https://actu.fr/occitanie/toulouse_31555/toulouse-60-policiers-municipaux-arretes-coronavirus-decime-rangs-patrouilles_32399605.html",
+    "published_date": "2020-03-19T16:32:02+01:00",
+    "entity": "government",
+    "tags": ["shortage", "mask"],
+    "region": "France"
+  },
+  {
+    "title": "Coronavirus Capitalism — and How to Beat It",
+    "url": "https://theintercept.com/2020/03/16/coronavirus-capitalism/",
+    "published_date": "2020-03-16T19:25:37+00:00",
+    "entity": "newspaper",
+    "tags": ["democracy", "economy"],
+    "region": "USA"
+  },
+  {
+    "title": "Les riches à la maison, les pauvres envoyés au front ? Le sentiment d'injustice monte chez les non-confinés",
+    "url": "https://www.lci.fr/population/certains-vont-bosser-la-boule-au-ventre-ces-salaries-qui-ont-l-impression-d-etre-envoyes-au-front-2148419.html",
+    "published_date": "2020-03-18T20:20:51.385Z",
+    "entity": "newspaper",
+    "tags": ["economy", "democracy", "behavior"],
+    "region": "France"
+  },
+  {
+    "title": "Coronavirus: Scientists warned China was ‘time bomb’ for an outbreak",
+    "url": "https://www.independent.co.uk/news/world/americas/coronavirus-outbreak-china-scientists-warning-wuhan-sars-a9424681.html",
+    "published_date": "2020-03-25T16:32:34+00:00",
+    "entity": "newspaper",
+    "tags": ["virus", "futurology"],
+    "region": "United Kingdom"
+  },
+  {
+    "title": "Severe Acute Respiratory Syndrome Coronavirus as an Agent of Emerging and Reemerging Infection",
+    "url": "https://doi.org/10.1128/CMR.00023-07",
+    "published_date": "2007-10-12",
+    "entity": "academic",
+    "tags": ["virus", "futurology"],
+    "region": "World"
+  },
+  {
+    "title": "Senator Dumped Up to $1.7 Million of Stock After Reassuring Public About Coronavirus Preparedness",
+    "url": "https://www.propublica.org/article/senator-dumped-up-to-1-7-million-of-stock-after-reassuring-public-about-coronavirus-preparedness",
+    "published_date": "2020-03-19T17:01:00-04:00",
+    "entity": "newspaper",
+    "tags": ["futurology", "economy", "democracy"],
+    "region": "USA"
+  },
 ]
