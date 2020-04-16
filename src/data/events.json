@@ -776,4 +776,28 @@
     "tags": ["futurology", "economy", "democracy"],
     "region": "USA"
   },
+  {
+    "title": "The Great Lockdown: Worst Economic Downturn Since the Great Depression",
+    "url": "https://blogs.imf.org/2020/04/14/the-great-lockdown-worst-economic-downturn-since-the-great-depression/",
+    "published_date": "2020-04-14",
+    "entity": "international-organization",
+    "tags": ["economy"],
+    "region": "World"
+  },
+  {
+    "title": "IMF warns Asian growth will come to a halt",
+    "url": "https://www.bbc.com/news/live/world-52305053?ns_mchannel=social&ns_source=twitter&ns_campaign=bbc_live&ns_linkname=5e97b3dedb1657065562a01f%26IMF%20warns%20Asian%20growth%20will%20come%20to%20a%20halt%262020-04-16T01%3A26%3A54.322Z&ns_fee=0&pinned_post_locator=urn:asset:05114449-69dc-4f8e-b1b5-44e8ca56d7b7&pinned_post_asset_id=5e97b3dedb1657065562a01f&pinned_post_type=share",
+    "published_date": "2020-04-16T03:26:00",
+    "entity": "international-organization",
+    "tags": ["economy"],
+    "region": "World"
+  },
+  {
+    "title": "Coronavirus: G20 delays poor nations' debt payments",
+    "url": "https://www.bbc.com/news/business-52292249",
+    "published_date": "2020-04-15T14:55:25+01:00",
+    "entity": "international-organization",
+    "tags": ["economy"],
+    "region": "World"
+  }
 ]
