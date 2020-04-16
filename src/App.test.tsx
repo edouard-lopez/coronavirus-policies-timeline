@@ -4,6 +4,9 @@ import App from './App';
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
-  const headerElement = getByText(/Timeline/i);
-  expect(headerElement).toBeInTheDocument();
+  const TimelineElement = getByText(/Timeline/i);
+  expect(TimelineElement).toBeInTheDocument();
+
+  const SelectionElement = getByText(/Selection/i);
+  expect(SelectionElement).toBeInTheDocument();
 });

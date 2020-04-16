@@ -27,7 +27,7 @@ function Timeline() {
   const graph = useRef(null);
   useEffect(() => drawGraph(graph, regions, data));
 
-  return <div ref={graph}></div>;
+  return <div ref={graph}  data-testid="chart"></div>;
 }
 
 export default Timeline;
