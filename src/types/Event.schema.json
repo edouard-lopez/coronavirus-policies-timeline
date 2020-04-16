@@ -11,6 +11,7 @@
           "government",
           "health-organization",
           "individual",
+          "international-organization",
           "newspaper"
         ],
         "type": "string"

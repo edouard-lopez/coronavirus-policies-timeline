@@ -5,5 +5,6 @@ export const entities = [
     "company", // Company representative | e.g. Dyson, Google, etc.
     "individual", // private individual | e.g. Dr. XYZ
     "newspaper", // investigation by newspapers BBC, LeMonde, Washington Post
+    "international-organization" // IMF, World Bank, WTO, etc.
   ] as const;
   
