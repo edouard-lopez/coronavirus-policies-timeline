@@ -649,7 +649,7 @@
     "region": "France"
   },
   {
-    "title": " Médicaments face au Covid-19: faute d’anticipation, le système D ",
+    "title": "Médicaments face au Covid-19: faute d’anticipation, le système D",
     "url": "https://www.mediapart.fr/journal/france/090420/medicaments-face-au-covid-19-faute-d-anticipation-le-systeme-d",
     "published_date": "2020-04-09T18:21:13+02:00",
     "entity": "health-organization",
@@ -723,7 +723,7 @@
   {
     "title": "One third of NHS staff and key workers tested in the UK have coronavirus, amid concerns over access to protective equipment",
     "url": "https://edition.cnn.com/2020/04/14/uk/uk-coronavirus-nhs-one-third-test-positive-gbr-intl/index.html",
-    "published_date": " 2020-04-14T10:36:27Z ",
+    "published_date": "2020-04-14T10:36:27Z",
     "entity": "government",
     "tags": ["testing", "health-care"],
     "region": "United Kingdom"
@@ -799,5 +799,69 @@
     "entity": "international-organization",
     "tags": ["economy"],
     "region": "World"
-  }
+  },
+  {
+    "title": "Coronavirus: Japan declares nationwide state of emergency",
+    "url": "https://www.bbc.com/news/world-asia-52313807",
+    "published_date": "2020-04-16T14:49:08+01:00",
+    "entity": "government",
+    "tags": ["announcement", "restriction", "stay-at-home"],
+    "region": "Japan"
+  },
+  {
+    "title": "Coronavirus: Putin postpones Russia's WW2 victory parade",
+    "url": "https://www.bbc.com/news/world-europe-52311934",
+    "published_date": "2020-04-16T18:16:34+01:00",
+    "entity": "government",
+    "tags": ["announcement", "stay-at-home"],
+    "region": "Russia"
+  },
+  {
+    "title": "Les silences coupables de la Chine",
+    "url": "https://www.mediapart.fr/journal/international/160420/les-silences-coupables-de-la-chine?onglet=full",
+    "published_date": "2020-04-16",
+    "entity": "newspaper",
+    "tags": ["virus", "democracy"],
+    "region": "World"
+  },
+  {
+    "title": "Coronavirus : seul un vaccin pourrait permettre un retour à la \"normalité\" selon le chef de l’ONU",
+    "url": "https://www.sudouest.fr/2020/04/16/coronavirus-seul-un-vaccin-pourrait-permettre-une-normalite-selon-le-chef-de-l-onu-7415725-10861.php",
+    "published_date": "2020-04-16T07:20:07+02:00",
+    "entity": "international-organization",
+    "tags": ["virus", "treatment"],
+    "region": "World"
+  },
+  {
+    "title": "Coronavirus : près de 700 marins positifs sur le porte-avions Charles de Gaulle",
+    "url": "https://www.sudouest.fr/2020/04/16/coronavirus-pres-de-700-marins-positifs-sur-le-porte-avions-charles-de-gaulle-7415751-10861.php",
+    "published_date": "2020-04-16T07:12:37+02:00",
+    "entity": "government",
+    "tags": ["announcement", "virus"],
+    "region": "France"
+  },
+  {
+    "title": "Coronavirus: UK lockdown extended for 'at least' three weeks",
+    "url": "https://www.bbc.com/news/uk-52313715",
+    "published_date": "2020-04-16T22:24:34+01:00",
+    "entity": "government",
+    "tags": ["announcement", "stay-at-home", "restriction"],
+    "region": "United Kingdom"
+  },
+  {
+    "title": "Coronavirus: Bolsonaro fires health minister over pandemic response",
+    "url": "https://www.bbc.com/news/world-latin-america-52316150",
+    "published_date": "2020-04-16T22:34:35+01:00",
+    "entity": "government",
+    "tags": ["announcement"],
+    "region": "Brazil"
+  },
+  {
+    "title": "Airbus to Furlough 3,000 French Staff as U.K. Resumes Work",
+    "url": "https://www.bloomberg.com/news/articles/2020-04-17/airbus-to-furlough-3-000-french-staff-as-u-k-plants-resume-work?srnd=premium-europe",
+    "published_date": "2020-04-17T16:01:22.864Z",
+    "entity": "company",
+    "tags": ["announcement", "aviation","economy"],
+    "region": "France"
+  },
 ]
