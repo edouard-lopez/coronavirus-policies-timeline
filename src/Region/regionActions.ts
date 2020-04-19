@@ -1,28 +1,26 @@
 import { Region } from '../types/region'
+import actionCreatorFactory from 'typescript-fsa'
 
-export const SET_REGION_FILTER = 'SET_REGION_FILTER'
-export const SELECT_REGION = 'SELECT_REGION'
-export const UNSELECT_REGION = 'UNSELECT_REGION'
+const actionCreator = actionCreatorFactory()
 
-export function selectRegion(payload: { text: string; region: Region }) {
-  return {
-    type: SELECT_REGION,
-    payload,
-  }
-}
-
-export function unSelectRegion(payload: { text: string; region: Region }) {
-  return {
-    type: UNSELECT_REGION,
-    payload,
-  }
-}
-
-export const RegionFilters = {
+const SET_REGION_FILTER = 'SET_REGION_FILTER'
+const SELECT_REGION = 'SELECT_REGION'
+const UNSELECT_REGION = 'UNSELECT_REGION'
+const REGION_FILTERS = {
   SHOW_ALL: 'SHOW_ALL',
   SHOW_SELECTED: 'SHOW_SELECTED',
 }
 
-export function setRegionFilter(payload: { filter: string }) {
-  return { type: SET_REGION_FILTER, payload }
+const selectRegion = actionCreator<{ region: Region }>(SELECT_REGION)
+const unSelectRegion = actionCreator<{ region: Region }>(UNSELECT_REGION)
+const setRegionFilter = actionCreator<{ filter: string }>(SET_REGION_FILTER)
+
+export {
+  SET_REGION_FILTER,
+  SELECT_REGION,
+  UNSELECT_REGION,
+  REGION_FILTERS,
+  selectRegion,
+  unSelectRegion,
+  setRegionFilter,
 }
