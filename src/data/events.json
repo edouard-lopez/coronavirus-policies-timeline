@@ -809,6 +809,14 @@
     "region": "Japan"
   },
   {
+    "title": "Stock Market Investors Are Too Optimistic",
+    "url": "https://www.bloomberg.com/opinion/articles/2020-04-17/coronavirus-stock-market-investors-are-too-optimistic",
+    "published_date": "2020-04-17T06:00:20.839Z",
+    "entity": "newspaper",
+    "tags": ["economy", "futurology", "behavior"],
+    "region": "USA"
+  },
+  {
     "title": "Coronavirus: Putin postpones Russia's WW2 victory parade",
     "url": "https://www.bbc.com/news/world-europe-52311934",
     "published_date": "2020-04-16T18:16:34+01:00",
@@ -861,7 +869,31 @@
     "url": "https://www.bloomberg.com/news/articles/2020-04-17/airbus-to-furlough-3-000-french-staff-as-u-k-plants-resume-work?srnd=premium-europe",
     "published_date": "2020-04-17T16:01:22.864Z",
     "entity": "company",
-    "tags": ["announcement", "aviation","economy"],
+    "tags": ["announcement", "aviation", "economy"],
     "region": "France"
   },
+  {
+    "title": " Les étudiants infirmiers dénoncent leurs conditions de travail ",
+    "url": "https://www.mediapart.fr/journal/france/180420/les-etudiants-infirmiers-denoncent-leurs-conditions-de-travail?onglet=full",
+    "published_date": "2020-04-18",
+    "entity": "newspaper",
+    "tags": ["health-care", "democracy", "shortage"],
+    "region": "France"
+  },
+  {
+    "title": "Coronavirus: Medics to be asked to reuse gowns amid shortage fears",
+    "url": "https://www.bbc.com/news/uk-52333157",
+    "published_date": "2020-04-17T22:33:16+01:00",
+    "entity": "health-organization",
+    "tags": ["health-care", "shortage", "announcement"],
+    "region": "United Kingdom"
+  },
+  {
+    "title": "Coronavirus lockdown: NZ to ease restrictions after 'stopping explosion'",
+    "url": "https://www.bbc.com/news/world-asia-52350910",
+    "published_date": "2020-04-20T08:58:11+01:00",
+    "entity": "government",
+    "tags": ["announcement", "restriction", "easing"],
+    "region": "New Zealand"
+  }
 ]
