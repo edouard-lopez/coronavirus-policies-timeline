@@ -11,6 +11,7 @@ export const tags = [
     "DIY", // 3D printing and other do-it yourself contribution
     "drug", // drug use and scarcity
     "economy", // impact, mitigation strategy, etc.
+    "easing", // restriction or lockdown easing
     "first-case", // first detected case in a region
     "futurology", // projection of the evolution
     "hand-sanitizer", // shortage, shipping, etc.
@@ -22,7 +23,7 @@ export const tags = [
     "restriction", // restriction of liberty/actions/services
     "rule-change", // change of existing rule or law
     "shipping", // shipping equipment
-    "shortage", // mask, protection, sanitizer, etc. shortage
+    "shortage", // mask, protection (PPE), sanitizer, etc. shortage
     "stay-at-home", // movement restriction
     "testing", // availability, testing strategy, etc.
     "treatment", // announcing a possible cure
