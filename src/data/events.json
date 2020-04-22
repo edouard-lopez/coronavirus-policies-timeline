@@ -895,5 +895,141 @@
     "entity": "government",
     "tags": ["announcement", "restriction", "easing"],
     "region": "New Zealand"
+  },
+  {
+    "title": "Coronavirus: Brazil's Bolsonaro joins anti-lockdown protests",
+    "url": "https://www.bbc.com/news/world-latin-america-52351636",
+    "published_date": "2020-04-20T15:57:02+01:00",
+    "entity": "newspaper",
+    "tags": ["behavior", "economy", "restriction"],
+    "region": "Brazil"
+  },
+  {
+    "title": "\"C'est la douche froide\" : pas de prime pour tous les salariés de la grande distribution qui travaillent, les syndicats s'indignent",
+    "url": "https://www.francetvinfo.fr/sante/maladie/coronavirus/c-est-la-douche-froide-pas-de-prime-pour-tous-les-salaries-de-la-grande-distribution-qui-travaillent-les-syndicats-s-indignent_3926253.html",
+    "published_date": "2020-04-21T06:24:10+02:00",
+    "entity": "newspaper",
+    "tags": ["pledge", "economy", "turnaround"],
+    "region": "France"
+  },
+  {
+    "title": "Coronavirus : droits de visite dans les Ehpad, port du masque, écoles... Ce qu'il faut retenir de la conférence de presse d'Edouard Philippe et Olivier Véran",
+    "url": "https://www.francetvinfo.fr/sante/maladie/coronavirus/coronavirus-droit-de-visite-en-ehpad-port-du-masque-ecoles-ce-qu-il-faut-retenir-de-la-conference-de-presse-d-edouard-philippe-et-d-oliver-veran_3924211.html",
+    "published_date": "2020-04-19T20:58:01+02:00",
+    "entity": "government",
+    "tags": ["announcement", "stay-at-home", "shortage", "economy", "easing"],
+    "region": "France"
+  },
+  {
+    "title": " Coronavirus’s ability to mutate has been vastly underestimated, and mutations affect deadliness of strains, Chinese study finds ",
+    "url": "https://www.scmp.com/news/china/science/article/3080771/coronavirus-mutations-affect-deadliness-strains-chinese-study",
+    "published_date": "2020-04-20T14:41:41.000Z",
+    "entity": "academic",
+    "tags": ["virus", "treatment"],
+    "region": "World"
+  },
+  {
+    "title": "Comment le Covid-19 a décimé certains conseils municipaux",
+    "url": "https://www.franceinter.fr/les-conseils-municipaux-decimes-par-le-covid-19",
+    "published_date": "2020-04-16T06:11:33",
+    "entity": "newspaper",
+    "tags": ["democracy", "rule-change"],
+    "region": "France"
+  },
+  {
+    "title": "Coronavirus : la pénurie de masques, blouses et gants \"reste importante\" à l’hôpital",
+    "url": "https://www.sudouest.fr/2020/04/21/coronavirus-la-penurie-de-masques-blouses-et-gants-reste-importante-a-l-hopital-7427970-4696.php",
+    "published_date": "2020-04-21T11:56:07+02:00",
+    "entity": "health-organization",
+    "tags": ["shortage", "mask"],
+    "region": "France"
+  },
+  {
+    "title": "Virgin Australia slumps into administration",
+    "url": "https://www.bbc.com/news/world-australia-52363428",
+    "published_date": "2020-04-21T01:32:30+01:00",
+    "entity": "company",
+    "tags": ["announcement", "aviation", "economy"],
+    "region": "Australia"
+  },
+  {
+    "title": "'Recovering' Boris Johnson holds phone call with Donald Trump",
+    "url": "https://www.bbc.com/news/live/business-52363531?ns_mchannel=social&ns_source=twitter&ns_campaign=bbc_live&ns_linkname=5e9f2473eb71d5067fd47099%26%27Recovering%27%20Boris%20Johnson%20holds%20phone%20call%20with%20Donald%20Trump%262020-04-21T17%3A01%3A28%2B00%3A00&ns_fee=0&pinned_post_locator=urn:asset:ff5124ea-0194-4b94-adc2-a42036db262c&pinned_post_asset_id=5e9f2473eb71d5067fd47099&pinned_post_type=share",
+    "published_date": "2020-04-21T19:01:00+01:00",
+    "entity": "newspaper",
+    "tags": ["treatment", "democracy"],
+    "region": "United Kingdom"
+  },
+  {
+    "title": " Denmark and Poland are refusing to bail out companies registered in offshore tax havens ",
+    "url": "https://www.businessinsider.fr/us/coronavirus-companies-tax-havens-banned-denmark-poland-bailout-2020-4",
+    "published_date": "2020-04-20T12:17:38+02:00",
+    "entity": "newspaper",
+    "tags": ["announcement", "economy", "bail-out", "restriction"],
+    "region": "Denmark"
+  },
+  {
+    "title": "Pomoc dla firm: rząd i NBP ogłaszają plan",
+    "url": "https://www.pb.pl/rzad-i-nbp-oglosza-plan-pomocy-firmom-relacja-987800",
+    "published_date": "2020-04-08 13:37:27",
+    "entity": "government",
+    "tags": ["announcement", "economy", "bail-out", "restriction"],
+    "region": "Poland"
+  },
+  {
+    "title": " Regeringen og alle Folketingets partier er enige om at justere og udvide hjælpepakker til dansk økonomi ",
+    "url": "https://www.fm.dk/nyheder/pressemeddelelser/2020/04/regeringen-og-alle-folketingets-partier-er-enige-om-at-justere-og-udvide-hjaelpepakker-til-dansk-oekonomi",
+    "published_date": "2020-04-18",
+    "entity": "government",
+    "tags": ["announcement", "economy", "bail-out", "restriction"],
+    "region": "Denmark"
+  },
+  {
+    "title": "States and Hospitals Are Essentially Smuggling PPE Because They’re Afraid the Feds Will Seize It",
+    "url": "https://lawandcrime.com/covid-19-pandemic/states-and-hospitals-are-essentially-smuggling-ppe-because-theyre-afraid-the-feds-will-seize-it/",
+    "published_date": "2020-04-20T14:05:55-04:00",
+    "entity": "newspaper",
+    "tags": ["shortage", "shortage", "mask"],
+    "region": "USA"
+  },
+  {
+    "title": "Coronavirus: World risks ‘biblical’ famines due to pandemic – UN",
+    "url": "https://www.bbc.com/news/world-52373888",
+    "published_date": "2020-04-21T17:50:05+01:00",
+    "entity": "international-organization",
+    "tags": ["shortage", "futurology"],
+    "region": "World"
+  },
+  {
+    "title": "More deaths, no benefit from malaria drug in VA virus study",
+    "url": "https://apnews.com/a5077c7227b8eb8b0dc23423c0bbe2b2",
+    "published_date": "2020-04-21T22:49:41Z",
+    "entity": "academic",
+    "tags": ["virus", "treatment"],
+    "region": "USA"
+  },
+  {
+    "title": "Pénurie de masques : comment la France a arrêté de se préparer aux épidémies",
+    "url": "https://www.lemonde.fr/planete/video/2020/04/22/penurie-de-masques-comment-la-france-a-arrete-de-se-preparer-aux-epidemies_6037381_3244.html",
+    "published_date": "2020-04-22T07:00:07+02:00",
+    "entity": "newspaper",
+    "tags": ["mask", "shortage", "health-care"],
+    "region": "France"
+  },
+  {
+    "title": "Coronavirus : le cap des dix millions de salariés au chômage partiel est dépassé",
+    "url": "https://www.sudouest.fr/2020/04/22/coronavirus-le-cap-des-dix-millions-de-salaries-au-chomage-partiel-est-depasse-7430351-10618.php",
+    "published_date": "2020-04-22T09:43:43+02:00",
+    "entity": "government",
+    "tags": ["economy", "bail-out"],
+    "region": "France"
+  },
+  {
+    "title": "Coronavirus : le nombre de morts repart à la hausse aux États-Unis, qui redoutent \"une 2e vague pire que la 1ère\"",
+    "url": "https://www.sudouest.fr/2020/04/22/coronavirus-le-nombre-de-morts-repart-a-la-hausse-aux-etats-unis-qui-redoutent-une-2e-vague-pire-que-la-1ere-7430173-10861.php",
+    "published_date": "2020-04-22T07:32:22+02:00",
+    "entity": "health-organization",
+    "tags": ["futurology", "virus"],
+    "region": "USA"
   }
 ]
