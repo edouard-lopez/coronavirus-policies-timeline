@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.pf-c-select__menu {
+  background-color: white;
+}
