@@ -20,6 +20,7 @@
         "enum": [
           "announcement",
           "aviation",
+          "bail-out",
           "bed",
           "behavior",
           "comparison",

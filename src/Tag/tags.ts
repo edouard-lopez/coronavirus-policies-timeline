@@ -2,6 +2,7 @@ export const tags = [
     "announcement", // statement to the public
     "aviation", // aviation travel, industry
     "bed", // providing new beds
+    "bail-out", // financial bail-out of individual/companies by government
     "behavior", // social behavior in reaction to announcement or not
     "comparison", // with other region that were hit before
     "copyright", // infringement, lock, removal, etc.
