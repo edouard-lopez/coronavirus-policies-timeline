@@ -1,7 +1,7 @@
-import { addLines } from "./Lines";
-import { addRegionLabels } from "./RegionLabels.js";
-import { title } from "./Brush";
-import { colorize } from "./colors";
+import { addLines } from './Lines'
+import { addRegionLabels } from './RegionLabels.js'
+import { title } from './Brush'
+import { colorize } from './colors'
 
 const drawZoomArea = (
   data,
@@ -9,22 +9,22 @@ const drawZoomArea = (
   lanes
 ) => {
   const zoomArea = svg
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-    .attr("width", width)
-    .attr("height", zoomAreaHeight)
-    .attr("class", "zoomArea");
+    .append('g')
+    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+    .attr('width', width)
+    .attr('height', zoomAreaHeight)
+    .attr('class', 'zoomArea')
 
   //zoomArea lanes and texts
-  addLines(zoomArea, data, { margin, width, positionAt: yStartPoint });
+  addLines(zoomArea, data, { margin, width, positionAt: yStartPoint })
   addRegionLabels(zoomArea, lanes, {
     margin,
     positionAt: yStartPoint,
-    classes: ["pf-c-title"],
-  });
+    classes: ['pf-c-title'],
+  })
 
-  return zoomArea.append("g").attr("clip-path", "url(#clip)");
-};
+  return zoomArea.append('g').attr('clip-path', 'url(#clip)')
+}
 
 const drawZoomedEvents = (
   zoomArea,
@@ -33,24 +33,24 @@ const drawZoomedEvents = (
 ) => {
   //update zoomArea event rects
   const zoomedEvents = zoomArea
-    .selectAll("rect")
+    .selectAll('rect')
     .data(visibleEvents, (d) => title(d))
-    .attr("x", (d) => xStartPoint(d.start))
-    .attr("width", (d) => xStartPoint(d.end) - xStartPoint(d.start));
+    .attr('x', (d) => xStartPoint(d.start))
+    .attr('width', (d) => xStartPoint(d.end) - xStartPoint(d.start))
 
   zoomedEvents
     .enter()
-    .append("rect")
-    .attr("class", "zoomed-event")
-    .attr("x", (d) => xStartPoint(d.start))
-    .attr("y", (d) => yStartPoint(d.lane))
-    .attr("width", (d) => xStartPoint(d.end) - xStartPoint(d.start))
-    .attr("height", (d) => yStartPoint(1))
-    .attr("style", (d) => colorize(d.lane));
+    .append('rect')
+    .attr('class', 'zoomed-event')
+    .attr('x', (d) => xStartPoint(d.start))
+    .attr('y', (d) => yStartPoint(d.lane))
+    .attr('width', (d) => xStartPoint(d.end) - xStartPoint(d.start))
+    .attr('height', (d) => yStartPoint(1))
+    .attr('style', (d) => colorize(d.lane))
 
-  zoomedEvents.exit().remove();
+  zoomedEvents.exit().remove()
 
-  return zoomedEvents;
-};
+  return zoomedEvents
+}
 
-export { drawZoomArea, drawZoomedEvents };
+export { drawZoomArea, drawZoomedEvents }

@@ -1,25 +1,25 @@
-import { DateTime } from "luxon";
+import { DateTime } from 'luxon'
 
-const FIRST_CASE = DateTime.fromISO("2019-11-17T00:00:00+00:00"); // 17 November 2019 https://www.theguardian.com/world/2020/mar/13/first-covid-19-case-happened-in-november-china-government-records-show-report
-const END_OF_2020 = DateTime.fromISO("2020-12-31T23:59:59+00:00");
-const PANDEMY_DURATION = END_OF_2020.diff(FIRST_CASE);
-const GRAPH_WIDTH = 2000; // pixels
-const MAP_DATA_TO_GRAPH = PANDEMY_DURATION.as("seconds") / GRAPH_WIDTH;
-const MIN_ITEM_WIDTH = 5; // pixels
-const GRAPH_BEGIN = 0;
+const FIRST_CASE = DateTime.fromISO('2019-11-17T00:00:00+00:00') // 17 November 2019 https://www.theguardian.com/world/2020/mar/13/first-covid-19-case-happened-in-november-china-government-records-show-report
+const END_OF_2020 = DateTime.fromISO('2020-12-31T23:59:59+00:00')
+const PANDEMY_DURATION = END_OF_2020.diff(FIRST_CASE)
+const GRAPH_WIDTH = 2000 // pixels
+const MAP_DATA_TO_GRAPH = PANDEMY_DURATION.as('seconds') / GRAPH_WIDTH
+const MIN_ITEM_WIDTH = 5 // pixels
+const GRAPH_BEGIN = 0
 
 const projectToGraph = (start: DateTime, end: DateTime) => {
-  const start_at = start.diff(FIRST_CASE).as("seconds") / MAP_DATA_TO_GRAPH;
+  const start_at = start.diff(FIRST_CASE).as('seconds') / MAP_DATA_TO_GRAPH
   const end_at = Math.max(
-    end.diff(FIRST_CASE).as("seconds") / MAP_DATA_TO_GRAPH,
+    end.diff(FIRST_CASE).as('seconds') / MAP_DATA_TO_GRAPH,
     start_at + MIN_ITEM_WIDTH
-  );
+  )
 
   return {
     start: Math.round(start_at),
     end: Math.round(end_at),
-  };
-};
+  }
+}
 
 export {
   END_OF_2020,
@@ -29,4 +29,4 @@ export {
   MAP_DATA_TO_GRAPH,
   MIN_ITEM_WIDTH,
   projectToGraph,
-};
+}
