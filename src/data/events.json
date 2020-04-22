@@ -1,5 +1,13 @@
 [
   {
+    "title": "The first case of someone in China suffering from Covid-19",
+    "url": "https://www.scmp.com/news/china/society/article/3074991/coronavirus-chinas-first-confirmed-covid-19-case-traced-back",
+    "published_date": "2019-11-17T00:00:00+00:00",
+    "entity": "government",
+    "tags": ["virus"],
+    "region": "World"
+  },
+  {
     "title": "Coronavirus : l’Europe suspend la règle poussant les avions à voler vides",
     "url": "https://reporterre.net/Coronavirus-l-Europe-suspend-la-regle-poussant-les-avions-a-voler-vides",
     "published_date": "2020-03-11",
