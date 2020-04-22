@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import data from '../data/events.json'
-import { buildD3Data } from '../events/Event'
+import { buildD3Data, getVisibileEvents } from '../events/Event'
 import { regionsWithEvents } from '../Region/regions'
 import { Event } from '../types/event'
 import { TimelineEvents } from '../types/timelineEvent'
@@ -18,9 +18,12 @@ const sortByRegion = (a: Event, b: Event) => {
 
 function VisibleEvents() {
   const timelineEvents = buildD3Data(data as TimelineEvents)
-  timelineEvents.sort(sortByRegion)
+  const visibileEvents = getVisibileEvents(
+    timelineEvents.sort(sortByRegion),
+    regionsWithEvents
+  )
   const [regions] = useState(regionsWithEvents)
-  const [events] = useState(timelineEvents)
+  const [events] = useState(visibileEvents)
 
   return <Timeline events={events} regions={regions} />
 }
