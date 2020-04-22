@@ -5,7 +5,7 @@ import { drawZoomedEvents } from './ZoomArea'
 const date = (d) => {
   return DateTime.fromISO(d.published_date).toLocaleString(DateTime.DATE_MED)
 }
-const title = (d) => `${date(d)}: ${d.title}`
+const title = (d) => `${d.title} [${date(d)}]`
 
 const wrap = (text, width) => {
   text.each(function () {
