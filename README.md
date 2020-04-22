@@ -33,3 +33,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 * [Timeline of the 2019–20 coronavirus pandemic](https://www.wikiwand.com/en/Timeline_of_the_2019%E2%80%9320_coronavirus_pandemic) ;
 * [Collection of selected COVID-19 novel coronavirus(SARS-CoV-2) related articles, categorized by date](https://www.covid19-archive.com/)
 * [D3-Annotation with D3 Line Chart, Adding Annotations to Charts](https://observablehq.com/@hydrosquall/d3-annotation-with-d3-line-chart)
+* [Timeline of the Coronavirus Pandemic and U.S. Response](https://www.justsecurity.org/69650/timeline-of-the-coronavirus-pandemic-and-u-s-response/)
