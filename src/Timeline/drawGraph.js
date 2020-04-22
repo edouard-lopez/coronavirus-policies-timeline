@@ -14,7 +14,7 @@ const drawGraph = (element, lanes, data) => {
     top: 20,
     right: 15,
     bottom: 15,
-    left: 100,
+    left: 150,
   }
   const width = graphWidth - margin.left - margin.right
   const graphHeight = 60 * lanes.length
