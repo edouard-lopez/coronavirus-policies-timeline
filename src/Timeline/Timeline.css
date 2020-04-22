@@ -13,6 +13,10 @@
   filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.5));
 }
 
+.zoomed-event,
+.overview-event {
+  opacity: 0.5;
+}
 .brush .extent {
   stroke: gray;
   fill: dodgerblue;
@@ -24,6 +28,11 @@
 }
 .event-label {
   fill: var(--pf-global--palette--black-700);
+  font-size: var(--pf-global--icon--FontSize--sm);
+  mask-image: linear-gradient(to right, black 5%, transparent 10%);
+}
+.event-label:hover {
+  mask-image: none;
 }
 .event-line {
   stroke: var(--pf-global--palette--black-200);
