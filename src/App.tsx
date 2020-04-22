@@ -1,17 +1,12 @@
+import { Flex, FlexBreakpoints, FlexItem, FlexModifiers } from "@patternfly/react-core";
+import "@patternfly/react-core/dist/styles/base.css";
 import React from "react";
 import "./App.css";
-import "@patternfly/react-core/dist/styles/base.css";
-import {
-  Flex,
-  FlexItem,
-  FlexModifiers,
-  FlexBreakpoints,
-} from "@patternfly/react-core";
-
-import Timeline from "./Timeline/Timeline";
+import EntitySelector from "./Entity/EntitySelector";
 import RegionSelector from "./Region/RegionSelector";
 import TagSelector from "./Tag/TagSelector";
-import EntitySelector from "./Entity/EntitySelector";
+import VisibleEvents from './Timeline/VisibleEvents';
+
 
 function App() {
   return (
@@ -31,7 +26,7 @@ function App() {
         >
           <FlexItem>
             <h2>Timeline</h2>
-            <Timeline />
+            <VisibleEvents />
           </FlexItem>
         </Flex>
         <Flex
