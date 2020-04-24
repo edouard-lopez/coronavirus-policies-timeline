@@ -1,5 +1,5 @@
 import { colorize } from './colors'
-import { addLines } from './Lines'
+import { addLanes } from './Lanes'
 import { addRegionLabels } from './RegionLabels.js'
 
 export const drawOverviewArea = (
@@ -18,7 +18,7 @@ export const drawOverviewArea = (
     .attr('class', 'overviewArea')
 
   //mini lanes and texts
-  addLines(overviewArea, data, { margin, width, positionAt: yEndPoint })
+  addLanes(overviewArea, data, { margin, width, positionAt: yEndPoint })
   addRegionLabels(overviewArea, lanes, {
     margin,
     positionAt: yEndPoint,

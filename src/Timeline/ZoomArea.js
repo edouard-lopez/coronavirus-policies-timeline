@@ -1,4 +1,4 @@
-import { addLines } from './Lines'
+import { addLanes } from './Lanes'
 import { addRegionLabels } from './RegionLabels.js'
 import { title } from './Brush'
 import { colorize } from './colors'
@@ -16,7 +16,7 @@ const drawZoomArea = (
     .attr('class', 'zoomArea')
 
   //zoomArea lanes and texts
-  addLines(zoomArea, data, { margin, width, positionAt: yStartPoint })
+  addLanes(zoomArea, data, { margin, width, positionAt: yStartPoint })
   addRegionLabels(zoomArea, lanes, {
     margin,
     positionAt: yStartPoint,
