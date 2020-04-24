@@ -19,7 +19,7 @@ export const drawZoomedEvents = (
 
   const zoomedEvents = zoomArea
     .selectAll('.zoomed-event')
-    .data(visibleEvents, (d) => title(d))
+    .data(visibleEvents, (d) => d)
     .attr('transform', (d) => `translate(${xEvent(d)},${y(d)})`)
     .enter()
     .append('g')
@@ -38,7 +38,7 @@ export const drawZoomedEvents = (
     .insert('a')
     .attr('xlink:href', (d) => d.url)
     .attr('target', '_blank')
-    .attr('transform', (d) => `translate(${xLink(d)}, 1)`)
+    .attr('transform', (d) => `translate(${xLink(d)}, 0)`)
     .append('text')
     .text((d) => title(d))
     .attr('transform', 'translate(2,12)')
