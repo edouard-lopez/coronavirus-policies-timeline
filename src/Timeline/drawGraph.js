@@ -12,7 +12,7 @@ const drawGraph = (element, lanes, data) => {
 
   const margin = {
     top: 20,
-    right: 15,
+    right: 0,
     bottom: 15,
     left: 150,
   }

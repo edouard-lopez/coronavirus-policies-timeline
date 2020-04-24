@@ -1,5 +1,7 @@
 const region = (d) => d
 
+const SPACE_AFTER_LABEL = 5
+
 const addRegionLabels = (context, lanes, { margin, positionAt, classes }) =>
   context
     .append('g')
@@ -8,7 +10,7 @@ const addRegionLabels = (context, lanes, { margin, positionAt, classes }) =>
     .enter()
     .append('text')
     .text((d) => region(d))
-    .attr('x', -margin.right)
+    .attr('x', -(margin.right + SPACE_AFTER_LABEL))
     .attr('y', (d, i) => positionAt(i + 0.5))
     .attr('dy', '.5ex')
     .attr('text-anchor', 'end')
