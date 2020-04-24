@@ -34,6 +34,14 @@
 .event-label:hover {
   mask-image: none;
 }
+
+.region-lane:nth-child(2n) > .event-lane {
+  fill: var(--pf-global--BackgroundColor--150);
+}
+.region-lane:nth-child(2n+1) > .event-lane {
+  fill: var(--pf-global--BackgroundColor--100);
+}
+
 .event-line {
   stroke: var(--pf-global--palette--black-200);
 }
