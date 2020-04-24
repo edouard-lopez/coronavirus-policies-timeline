@@ -12,12 +12,12 @@ const initialState = {
   events,
 }
 
-const store = createStore( 
+const store = createStore(
   combineReducers({
     regionFilter,
     seletcedRegions,
   }),
-  initialState
+  {}
 )
 
 export default store
