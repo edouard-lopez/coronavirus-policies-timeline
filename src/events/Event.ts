@@ -42,7 +42,7 @@ const addStartAndEnd = (event: Event) => {
   }
 }
 
-const getVisibileEvents = (events: TimelineEvents, regions: Regions) =>
+const getEvents = (events: TimelineEvents, regions: Regions) =>
   events.filter((event) => regions.includes(event.region))
 
 export {
@@ -50,5 +50,5 @@ export {
   addLane,
   addD3Metadata,
   addStartAndEnd,
-  getVisibileEvents,
+  getEvents,
 }

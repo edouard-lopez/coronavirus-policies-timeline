@@ -7,7 +7,7 @@ import {
   addD3Metadata,
   addLane,
   buildD3Data,
-  getVisibileEvents,
+  getEvents,
 } from './Event'
 
 const event1: Event = {
@@ -79,7 +79,7 @@ test('should return events belonging to region with more events than default thr
   const timelineEvents: TimelineEvents = buildD3Data(events)
   const regionsWithEnoughEvents: Regions = ['Europe']
 
-  expect(getVisibileEvents(timelineEvents, regionsWithEnoughEvents)).toEqual([
+  expect(getEvents(timelineEvents, regionsWithEnoughEvents)).toEqual([
     {
       ...event2,
       start: 569,
