@@ -1039,5 +1039,37 @@
     "entity": "health-organization",
     "tags": ["futurology", "virus"],
     "region": "USA"
+  },
+  {
+    "title": "Coronavirus: Germany's states make face masks compulsory",
+    "url": "https://www.bbc.com/news/world-europe-52382196",
+    "published_date": "2020-04-22T16:04:19+01:00",
+    "entity": "government",
+    "tags": ["announcement", "restriction", "mask", "easing"],
+    "region": "Germany"
+  },
+  {
+    "title": "Harbin closes off communities and villages in wake of clustered infections",
+    "url": "https://www.globaltimes.cn/content/1186375.shtml",
+    "published_date": "2020-04-22T13:20:20 ",
+    "entity": "government",
+    "tags": ["announcement", "restriction", "stay-at-home"],
+    "region": "China"
+  },
+  {
+    "title": "Coronavirus: Lockdown's heavy toll on Italy's mental health",
+    "url": "https://www.bbc.com/news/av/world-europe-52400085/coronavirus-lockdown-s-heavy-toll-on-italy-s-mental-health",
+    "published_date": "2020-04-24T00:00:24+01:00",
+    "entity": "newspaper",
+    "tags": ["stay-at-home", "futurology"],
+    "region": "Italy"
+  },
+  {
+    "title": " Air-conditioning spread the coronavirus to 9 people sitting near an infected person in a restaurant, researchers say. It has huge implications for the service industry. ",
+    "url": "https://www.businessinsider.fr/us/air-conditioning-spread-coronavirus-restaurant-can-service-industry-open-again-2020-4",
+    "published_date": "2020-04-21T17:49:00+02:00",
+    "entity": "academic",
+    "tags": ["virus", "restriction"],
+    "region": "World"
   }
 ]
