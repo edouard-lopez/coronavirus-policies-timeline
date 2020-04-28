@@ -3,7 +3,7 @@ import { isType } from 'typescript-fsa'
 import { Regions } from '../types/region'
 import { REGION_FILTERS, selectRegion, setRegionFilter, unSelectRegion } from './regionActions'
 
-export function seletcedRegions(state: Regions = [], action: Action) {
+export function selectedRegions(state: Regions = [], action: Action) {
   if (isType(action, selectRegion)) {
     return [...state, action.payload.region]
   }
