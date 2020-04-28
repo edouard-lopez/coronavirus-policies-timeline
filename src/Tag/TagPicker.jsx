@@ -3,7 +3,7 @@ import { tags } from "./tags";
 import React from "react";
 import { Select, SelectOption, SelectVariant } from "@patternfly/react-core";
 
-class TagSelector extends React.Component {
+class TagPicker extends React.Component {
   constructor(props) {
     super(props);
     this.options = tags.map(tag => ({
@@ -82,4 +82,4 @@ class TagSelector extends React.Component {
   }
 }
 
-export default TagSelector;
+export default TagPicker;

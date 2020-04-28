@@ -2,9 +2,9 @@ import { Flex, FlexBreakpoints, FlexItem, FlexModifiers } from "@patternfly/reac
 import "@patternfly/react-core/dist/styles/base.css";
 import React from "react";
 import "./App.css";
-import EntitySelector from "./Entity/EntitySelector";
-import RegionSelector from "./Region/RegionSelector";
-import TagSelector from "./Tag/TagSelector";
+import EntityPicker from "./Entity/EntityPicker";
+import RegionPicker from "./Region/RegionPicker";
+import TagPicker from "./Tag/TagPicker";
 import VisibleEvents from './Timeline/VisibleEvents';
 
 
@@ -40,13 +40,13 @@ function App() {
             <h2>Selection</h2>
           </FlexItem>
           <FlexItem>
-            <RegionSelector />
+            <RegionPicker />
           </FlexItem>
           <FlexItem>
-            <TagSelector />
+            <TagPicker />
           </FlexItem>
           <FlexItem>
-            <EntitySelector />
+            <EntityPicker />
           </FlexItem>
         </Flex>
       </Flex>
