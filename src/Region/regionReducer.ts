@@ -1,7 +1,7 @@
 import { Action } from 'redux'
 import { isType } from 'typescript-fsa'
 import { Regions } from '../types/region'
-import { REGION_FILTERS, selectRegion, setRegionFilter, unSelectRegion } from './regionActions'
+import { selectRegion, unSelectRegion } from './regionActions'
 
 export function selectedRegions(state: Regions = [], action: Action) {
   if (isType(action, selectRegion)) {
@@ -14,12 +14,5 @@ export function selectedRegions(state: Regions = [], action: Action) {
     ]
   }
 
-  return state
-}
-
-export function regionFilter(state = REGION_FILTERS.SHOW_ALL, action: Action) {
-  if (isType(action, setRegionFilter)) {
-    return action.payload.filter
-  }
   return state
 }

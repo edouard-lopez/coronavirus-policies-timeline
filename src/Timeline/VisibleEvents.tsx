@@ -1,17 +1,13 @@
 import { connect } from 'react-redux'
 import data from '../data/events.json'
+import { buildD3Data, getEvents } from '../events/Event'
+import { selectRegion, unSelectRegion } from '../Region/regionActions'
+import { regionsWithEvents } from '../Region/regions'
+import { getSelectedRegions, RootState } from '../Region/regionSelectors'
 import { Event } from '../types/event'
 import { Regions } from '../types/region'
 import { TimelineEvents } from '../types/timelineEvent'
-import { buildD3Data, getEvents } from '../events/Event'
-import {
-  selectRegion,
-  setRegionFilter,
-  unSelectRegion,
-} from '../Region/regionActions'
-import { regionsWithEvents } from '../Region/regions'
 import Timeline from './Timeline'
-import { RootState, getSelectedRegions } from '../Region/regionSelectors'
 
 const sortByRegion = (a: Event, b: Event) => {
   if (a.region > b.region) {
@@ -41,7 +37,6 @@ const mapStateToProps = (state: RootState) => ({
 const mapDispatchToProps = {
   selectRegion: () => selectRegion,
   unSelectRegion: () => unSelectRegion,
-  setRegionFilter: () => setRegionFilter,
 }
 
 const connector = connect(mapStateToProps, mapDispatchToProps)

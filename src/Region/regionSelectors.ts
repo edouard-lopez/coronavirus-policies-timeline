@@ -4,10 +4,9 @@ import { isEmpty } from '../helpers/array'
 
 export interface RootState {
   selectedRegions: Regions
-  regionFilter: string
 }
 
 export const getSelectedRegions = (
   state: RootState,
   defaultRegions: Regions = regionsWithEvents
-) => isEmpty(state.selectedRegions) ? defaultRegions : state.selectedRegions
+) => (isEmpty(state.selectedRegions) ? defaultRegions : state.selectedRegions)

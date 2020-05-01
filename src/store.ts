@@ -1,8 +1,7 @@
-import { combineReducers, createStore, compose } from 'redux'
-import { regionFilter, selectedRegions } from './Region/regionReducer'
+import { combineReducers, compose, createStore } from 'redux'
+import { selectedRegions } from './Region/regionReducer'
 
 export const reducers = combineReducers({
-  regionFilter,
   selectedRegions,
 })
 const initialState = {}
