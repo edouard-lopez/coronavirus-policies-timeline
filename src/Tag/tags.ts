@@ -13,6 +13,7 @@ export const tags = [
     "drug", // drug use and scarcity
     "economy", // impact, mitigation strategy, etc.
     "easing", // restriction or lockdown easing
+    "food", // exportation/famine
     "first-case", // first detected case in a region
     "futurology", // projection of the evolution
     "hand-sanitizer", // shortage, shipping, etc.
