@@ -16,7 +16,6 @@ function App() {
           { modifier: FlexModifiers["column"] },
           { modifier: FlexModifiers["row"], breakpoint: FlexBreakpoints.lg },
         ]}
-        className="chart"
       >
         <Flex
           breakpointMods={[
