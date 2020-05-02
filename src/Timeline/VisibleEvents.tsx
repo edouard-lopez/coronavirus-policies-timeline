@@ -1,7 +1,6 @@
 import { connect } from 'react-redux'
 import data from '../data/events.json'
 import { buildD3Data, getEvents } from '../events/Event'
-import { selectRegion, unSelectRegion } from '../Region/regionActions'
 import { regionsWithEvents } from '../Region/regions'
 import { getSelectedRegions, RootState } from '../Region/regionSelectors'
 import { Event } from '../types/event'
@@ -33,12 +32,6 @@ const mapStateToProps = (state: RootState) => ({
   regions: getSelectedRegions(state),
   events: getVisibleEvents(timelineEvents, getSelectedRegions(state)),
 })
-
-const mapDispatchToProps = {
-  selectRegion: () => selectRegion,
-  unSelectRegion: () => unSelectRegion,
-}
-
-const connector = connect(mapStateToProps, mapDispatchToProps)
+const connector = connect(mapStateToProps, {})
 
 export default connector(Timeline)
