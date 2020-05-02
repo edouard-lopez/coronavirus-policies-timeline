@@ -11,7 +11,7 @@ In the project directory, you can run:
 ### Events
 
 | key                             | description               | example                                                                                                                                                             |
-| ------------------------------* | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------------------------ | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `published_date`                | source's publication date | `2020-03-03T21:06:04`                                                                                                                                               |
 | `url`                           | source URL                | [https://www.liberation.fr/…](https://www.liberation.fr/france/2020/03/03/penurie-de-masques-les-autorites-n-ont-pas-vu-plus-loin-que-le-bout-de-leur-nez_1780489), |
 | `title`                         | source article title      | _Pénurie de masques : les autorités n’ont pas vu plus loin que le bout de leur nez_                                                                                 |
