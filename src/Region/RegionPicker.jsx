@@ -1,9 +1,11 @@
+import { Select, SelectOption, SelectVariant } from '@patternfly/react-core'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { selectRegion, unSelectRegion } from '../Region/regionActions'
+import { getSelectedRegions } from '../Region/regionSelectors'
 import { regionsWithEvents } from './regions'
 
-import React from 'react'
-import { Select, SelectOption, SelectVariant } from '@patternfly/react-core'
-
-class RegionPicker extends React.Component {
+class RegionPicker extends Component {
   constructor(props) {
     super(props)
     this.options = regionsWithEvents.map((region) => ({
@@ -25,6 +27,7 @@ class RegionPicker extends React.Component {
 
     this.onSelect = (event, selection) => {
       const { selected } = this.state
+
       if (selected.includes(selection)) {
         this.setState(
           (prevState) => ({
@@ -33,6 +36,11 @@ class RegionPicker extends React.Component {
           () => console.log('selections: ', this.state.selected)
         )
       } else {
+        const { selectRegion } = this.props
+        console.log('selectRegion({ region: selection })', selectRegion({ region: selection }));
+
+        // selectRegion({ region: selection })
+
         this.setState(
           (prevState) => ({ selected: [...prevState.selected, selection] }),
           () => console.log('selections: ', this.state.selected)
@@ -82,4 +90,15 @@ class RegionPicker extends React.Component {
   }
 }
 
-export default RegionPicker
+const mapStateToProps = (state) => ({
+  regions: getSelectedRegions(state),
+})
+const mapDispatchToProps = (dispatch) => {
+  return {
+    selectRegion: (region) => dispatch(selectRegion(region)),
+    unSelectRegion: (region) => dispatch(unSelectRegion(region)),
+  }
+}
+const connector = connect(mapStateToProps, mapDispatchToProps)
+
+export default connector(RegionPicker)
