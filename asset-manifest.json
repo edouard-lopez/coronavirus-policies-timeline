@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c4d9d28.chunk.css",
-    "main.js": "/static/js/main.0819401e.chunk.js",
-    "main.js.map": "/static/js/main.0819401e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.88059c5c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.88059c5c.js.map",
-    "static/css/2.20aca9f7.chunk.css": "/static/css/2.20aca9f7.chunk.css",
-    "static/js/2.6800ee54.chunk.js": "/static/js/2.6800ee54.chunk.js",
-    "static/js/2.6800ee54.chunk.js.map": "/static/js/2.6800ee54.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.264ea24ff4ed3ee1211d94fb58dd5b76.js": "/precache-manifest.264ea24ff4ed3ee1211d94fb58dd5b76.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.20aca9f7.chunk.css.map": "/static/css/2.20aca9f7.chunk.css.map",
-    "static/css/main.6c4d9d28.chunk.css.map": "/static/css/main.6c4d9d28.chunk.css.map",
-    "static/js/2.6800ee54.chunk.js.LICENSE.txt": "/static/js/2.6800ee54.chunk.js.LICENSE.txt",
-    "static/media/base.css": "/static/media/pficon.f907e666.ttf",
-    "static/media/background-image.css": "/static/media/pfbg_768@2x.0099dea3.jpg",
-    "static/media/about-modal-box.css": "/static/media/pfbg_992@2x.1423e11e.jpg"
+    "main.css": "/coronavirus-policies-timeline/static/css/main.6c4d9d28.chunk.css",
+    "main.js": "/coronavirus-policies-timeline/static/js/main.ae8d3f6b.chunk.js",
+    "main.js.map": "/coronavirus-policies-timeline/static/js/main.ae8d3f6b.chunk.js.map",
+    "runtime-main.js": "/coronavirus-policies-timeline/static/js/runtime-main.52a760a7.js",
+    "runtime-main.js.map": "/coronavirus-policies-timeline/static/js/runtime-main.52a760a7.js.map",
+    "static/css/2.3acbf0a7.chunk.css": "/coronavirus-policies-timeline/static/css/2.3acbf0a7.chunk.css",
+    "static/js/2.6800ee54.chunk.js": "/coronavirus-policies-timeline/static/js/2.6800ee54.chunk.js",
+    "static/js/2.6800ee54.chunk.js.map": "/coronavirus-policies-timeline/static/js/2.6800ee54.chunk.js.map",
+    "index.html": "/coronavirus-policies-timeline/index.html",
+    "precache-manifest.9672027ec49540237ebe33a158c0bee1.js": "/coronavirus-policies-timeline/precache-manifest.9672027ec49540237ebe33a158c0bee1.js",
+    "service-worker.js": "/coronavirus-policies-timeline/service-worker.js",
+    "static/css/2.3acbf0a7.chunk.css.map": "/coronavirus-policies-timeline/static/css/2.3acbf0a7.chunk.css.map",
+    "static/css/main.6c4d9d28.chunk.css.map": "/coronavirus-policies-timeline/static/css/main.6c4d9d28.chunk.css.map",
+    "static/js/2.6800ee54.chunk.js.LICENSE.txt": "/coronavirus-policies-timeline/static/js/2.6800ee54.chunk.js.LICENSE.txt",
+    "static/media/base.css": "/coronavirus-policies-timeline/static/media/pficon.f907e666.ttf",
+    "static/media/background-image.css": "/coronavirus-policies-timeline/static/media/pfbg_768@2x.0099dea3.jpg",
+    "static/media/about-modal-box.css": "/coronavirus-policies-timeline/static/media/pfbg_992@2x.1423e11e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.88059c5c.js",
-    "static/css/2.20aca9f7.chunk.css",
+    "static/js/runtime-main.52a760a7.js",
+    "static/css/2.3acbf0a7.chunk.css",
     "static/js/2.6800ee54.chunk.js",
     "static/css/main.6c4d9d28.chunk.css",
-    "static/js/main.0819401e.chunk.js"
+    "static/js/main.ae8d3f6b.chunk.js"
   ]
 }
