@@ -37,9 +37,7 @@ class RegionPicker extends Component {
         )
       } else {
         const { selectRegion } = this.props
-        console.log('selectRegion({ region: selection })', selectRegion({ region: selection }));
-
-        // selectRegion({ region: selection })
+        selectRegion({ region: selection })
 
         this.setState(
           (prevState) => ({ selected: [...prevState.selected, selection] }),
