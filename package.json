@@ -1,5 +1,6 @@
 {
   "name": "coronavirus-policies-timeline",
+  "homepage": "https://edouard-lopez.github.io/coronavirus-policies-timeline/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages --dist dist/"
+    "deploy": "gh-pages --dist build/"
   },
   "eslintConfig": {
     "extends": "react-app"
