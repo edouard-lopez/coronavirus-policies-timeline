@@ -9,6 +9,7 @@
     "luxon": "^1.22.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-gantt-schedule-timeline-calendar": "^1.1.40",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5"
   },

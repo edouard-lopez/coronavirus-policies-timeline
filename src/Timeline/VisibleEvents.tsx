@@ -6,7 +6,7 @@ import { getSelectedRegions, RootState } from '../Region/regionSelectors'
 import { Event } from '../types/event'
 import { Regions } from '../types/region'
 import { TimelineEvents } from '../types/timelineEvent'
-import Timeline from './Timeline'
+import GanttTimeline from './GanttTimeline'
 
 const sortByRegion = (a: Event, b: Event) => {
   if (a.region > b.region) {
@@ -34,4 +34,4 @@ const mapStateToProps = (state: RootState) => ({
 })
 const connector = connect(mapStateToProps, {})
 
-export default connector(Timeline)
+export default connector(GanttTimeline)
