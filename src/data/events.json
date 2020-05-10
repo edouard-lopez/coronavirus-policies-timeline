@@ -1079,5 +1079,93 @@
     "entity": "government",
     "tags": ["announcement", "futurology", "restriction", "food"],
     "region": "Russia"
+  },
+  {
+    "title": "French hospital discovers Covid-19 case from December",
+    "url": "https://www.theguardian.com/world/2020/may/04/french-hospital-discovers-covid-19-case-december-retested",
+    "published_date": "2020-05-04T17:50:27+0100",
+    "entity": "health-organization",
+    "tags": ["announcement", "first-case", "testing"],
+    "region": "France"
+  },
+  {
+    "title": "Five Eyes network contradicts theory Covid-19 leaked from lab",
+    "url": "https://www.theguardian.com/world/2020/may/04/five-eyes-network-contradicts-theory-covid-19-leaked-from-lab",
+    "published_date": "2020-05-04T19:36:02.000Z",
+    "entity": "government",
+    "tags": ["virus", "first-case"],
+    "region": "World"
+  },
+  {
+    "title": "Coronavirus: First US deaths weeks earlier than thought",
+    "url": "https://www.bbc.com/news/world-us-canada-52385558",
+    "published_date": "2020-04-22T15:03:45+01:00",
+    "entity": "health-organization",
+    "tags": ["virus", "first-case"],
+    "region": "USA"
+  },
+  {
+    "title": "Déconfinement : la distanciation dans les avions pourrait faire grimper le prix des billets",
+    "url": "https://www.sudouest.fr/2020/05/05/deconfinement-la-distanciation-dans-les-avions-pourrait-faire-grimper-le-prix-des-billets-7462074-11020.php",
+    "published_date": "2020-05-05T20:38:10+02:00",
+    "entity": "international-organization",
+    "tags": ["aviation", "economy", "restriction", "announcement"],
+    "region": "World"
+  },
+  {
+    "title": "Coronavirus mutations: Scientists puzzle over impact",
+    "url": "https://www.bbc.com/news/health-52557955",
+    "published_date": "2020-05-06T15:57:22+01:00",
+    "entity": "health-organization",
+    "tags": ["virus", "futurology"],
+    "region": "World"
+  },
+  {
+    "title": " From Hong Kong to Britain, governments ranked poorly for their response to Covid-19 ",
+    "url": "https://www.scmp.com/week-asia/politics/article/3083185/coronavirus-mainland-chinese-impressed-their-leaders-hongkongers",
+    "published_date": "2020-05-06T11:30:05.000Z",
+    "entity": "newspaper",
+    "tags": ["behavior", "comparison", "democracy"],
+    "region": "World"
+  },
+  {
+    "title": "Coronavirus: Six killed in clashes at Afghanistan food aid protest",
+    "url": "https://www.bbc.com/news/world-asia-52601001",
+    "published_date": "2020-05-09T16:19:42+01:00",
+    "entity": "government",
+    "tags": ["distribution", "food"],
+    "region": "Afghanistan"
+  },
+  {
+    "title": "UK commuters face cycling or walking to work once lockdown is eased",
+    "url": "https://www.reuters.com/article/us-health-coronavirus-britain-transport/uk-commuters-face-cycling-or-walking-to-work-once-lockdown-is-eased-idUSKBN22L0PD",
+    "published_date": "2020-05-09T18:56:58+0000",
+    "entity": "government",
+    "tags": ["easing", "respirator"],
+    "region": "United Kingdom"
+  },
+  {
+    "title": "Trudeau warns premature reopening could send Canada 'back into confinement'",
+    "url": "https://www.reuters.com/article/us-health-coronavirus-canada/trudeau-warns-premature-reopening-could-send-canada-back-into-confinement-idUSKBN22L0OX",
+    "published_date": "2020-05-09T18:44:33+0000",
+    "entity": "government",
+    "tags": ["easing", "restriction", "futurology"],
+    "region": "Canada"
+  },
+  {
+    "title": "Britain to quarantine travellers for 14 days, UK airlines body says",
+    "url": "https://www.reuters.com/article/us-health-coronavirus-britain-travel/britain-to-quarantine-travellers-for-14-days-uk-airlines-body-says-idUSKBN22L0GI",
+    "published_date": "2020-05-09T18:38:54+0000",
+    "entity": "government",
+    "tags": ["announcement", "rule-change", "aviation", "restriction"],
+    "region": "United Kingdom"
+  },
+  {
+    "title": "Slovenian cyclists stage anti-government coronavirus protest",
+    "url": "https://www.reuters.com/article/us-slovenia-protests/slovenian-cyclists-stage-anti-government-coronavirus-protest-idUSKBN22K2Q1",
+    "published_date": "2020-05-09T13:04:49+0000",
+    "entity": "newspaper",
+    "tags": ["restriction", "democracy", "easing"],
+    "region": "Slovenia"
   }
 ]
