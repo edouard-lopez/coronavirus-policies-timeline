@@ -1,6 +1,6 @@
 import dataset from '../data/events.json'
 import { Events } from '../types/event'
-import { Region } from '../types/region'
+import { Region, Regions } from '../types/region'
 
 export const regions = [
   // Regional blocks
@@ -219,7 +219,7 @@ export const MIN_EVENTS_FOR_REGION_VISIBILITY = 3
 export const getRegionsWithEvents = (
   events: Events,
   threshold = MIN_EVENTS_FOR_REGION_VISIBILITY
-) =>
+): Regions =>
   countEventsByRegions(events)
     .filter((region) => region.count >= threshold)
     .map((item) => item.region)

@@ -1,12 +1,11 @@
 import { connect } from 'react-redux'
 import data from '../data/events.json'
-import { buildD3Data, getEvents } from '../events/Event'
+import { getEvents } from '../events/Event'
 import { regionsWithEvents } from '../Region/regions'
 import { getSelectedRegions, RootState } from '../Region/regionSelectors'
-import { Event } from '../types/event'
-import { Regions } from '../types/region'
-import { TimelineEvents } from '../types/timelineEvent'
+import { Event, Events } from '../types/event'
 import GanttTimeline from './GanttTimeline'
+import { Regions } from '../types/region'
 
 const sortByRegion = (a: Event, b: Event) => {
   if (a.region > b.region) {
@@ -18,11 +17,10 @@ const sortByRegion = (a: Event, b: Event) => {
   return 0
 }
 
-const timelineEvents = buildD3Data(data as TimelineEvents)
 
-const getVisibleEvents = (events: TimelineEvents, regions: Regions) => {
+const getVisibleEvents = (events: Events, regions: Regions = regionsWithEvents) => {
   const visibileEvents = getEvents(
-    timelineEvents.sort(sortByRegion),
+    events.sort(sortByRegion),
     regionsWithEvents
   )
   return visibileEvents
@@ -30,7 +28,7 @@ const getVisibleEvents = (events: TimelineEvents, regions: Regions) => {
 
 const mapStateToProps = (state: RootState) => ({
   regions: getSelectedRegions(state),
-  events: getVisibleEvents(timelineEvents, getSelectedRegions(state)),
+  events: getVisibleEvents(data as Events)
 })
 const connector = connect(mapStateToProps, {})
 
